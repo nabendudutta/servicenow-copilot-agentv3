@@ -1,0 +1,82 @@
+name: Sync ServiceNow Knowledge
+
+on:
+  schedule:
+    - cron: '0 6  * * *'
+    - cron: '0 14 * * *'
+    - cron: '0 22 * * *'
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Validate ServiceNow secrets
+        run: |
+          MISSING=()
+          [ -z "$SNOW_INSTANCE" ] && MISSING+=("SNOW_INSTANCE")
+          [ -z "$SNOW_USER"     ] && MISSING+=("SNOW_USER")
+          [ -z "$SNOW_PASSWORD" ] && MISSING+=("SNOW_PASSWORD")
+          if [ ${#MISSING[@]} -gt 0 ]; then
+            echo "Missing secrets: ${MISSING[*]}"
+            exit 1
+          fi
+          echo "All secrets present. Instance: $SNOW_INSTANCE"
+        env:
+          SNOW_INSTANCE: ${{ secrets.SNOW_INSTANCE }}
+          SNOW_USER:     ${{ secrets.SNOW_USER }}
+          SNOW_PASSWORD: ${{ secrets.SNOW_PASSWORD }}
+
+      - name: Sync ServiceNow KB
+        env:
+          SNOW_INSTANCE: ${{ secrets.SNOW_INSTANCE }}
+          SNOW_USER:     ${{ secrets.SNOW_USER }}
+          SNOW_PASSWORD: ${{ secrets.SNOW_PASSWORD }}
+        run: python sync/servicenow_sync.py
+
+      - name: Commit updated knowledge files
+        run: |
+          git config user.name  github-actions
+          git config user.email github-actions@github.com
+          git add knowledge/
+          git diff --cached --quiet && echo "No changes" || git commit -m "Auto sync ServiceNow knowledge [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+          git push
+
+  # Immediately rebuild vector DB after sync so agent always has fresh data
+  rebuild-vector:
+    needs: sync
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main    # pull latest after sync commit
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - run: pip install -r requirements.txt
+
+      - name: Rebuild FAISS + keyword index
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+        run: python sync/embedding_builder_github.py
+
+      - name: Commit rebuilt vector DB
+        run: |
+          git config user.name  github-actions
+          git config user.email github-actions@github.com
+          git add vectordb/
+          git diff --cached --quiet && echo "No changes" || git commit -m "Rebuild vector DB after sync [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+          git push
