@@ -77,8 +77,10 @@ jobs:
         run: |
           git config user.name  github-actions
           git config user.email github-actions@github.com
+          git add knowledge/ vectordb/
+          git stash
           git pull origin main --rebase
-          git push origin main
-          git add vectordb/
+          git stash pop
+          git add knowledge/ vectordb/
           git diff --cached --quiet && echo "No changes" || git commit -m "Rebuild vector DB after sync [$(date -u '+%Y-%m-%d %H:%M UTC')]"
-          git push
+          git push origin main
