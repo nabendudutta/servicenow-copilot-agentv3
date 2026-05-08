@@ -44,6 +44,7 @@ jobs:
           SNOW_USER:     ${{ secrets.SNOW_USER }}
           SNOW_PASSWORD: ${{ secrets.SNOW_PASSWORD }}
         run: python sync/servicenow_sync.py
+        run: python sync/servicenow-live-incidents.py
 
       - name: Commit updated knowledge files
         run: |
