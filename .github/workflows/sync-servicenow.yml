@@ -62,7 +62,7 @@ jobs:
           SNOW_INSTANCE: ${{ secrets.SNOW_INSTANCE }}
           SNOW_USER:     ${{ secrets.SNOW_USER }}
           SNOW_PASSWORD: ${{ secrets.SNOW_PASSWORD }}
-        run: python sync/servicenow_sync.py
+        run: python sync/servicenow_syncv3.py
 
       # ── Commit generated Markdown files ─────────────────────────────────
       # Uses --no-rebase pull to avoid the stash/rebase fragility of the old approach.
@@ -114,7 +114,7 @@ jobs:
       - name: Rebuild FAISS + keyword index
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
-        run: python sync/embedding_builder_github.py
+        run: python sync/embedding_builder_githubv3.py
 
       # ── Commit the rebuilt vector DB ─────────────────────────────────────
       # Simple, conflict-free: pull first, then stage only vectordb/ and commit.
