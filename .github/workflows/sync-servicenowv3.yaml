@@ -1,4 +1,4 @@
-name: Sync ServiceNow Knowledge version 3
+name: Sync ServiceNow Knowledge version ( Backup)
 
 # ─── Triggers ────────────────────────────────────────────────────────────────
 # Three times a day + on-demand via workflow_dispatch
