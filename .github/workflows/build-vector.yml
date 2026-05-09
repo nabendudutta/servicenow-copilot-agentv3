@@ -3,7 +3,7 @@ name: Build Vector Database
 on:
   push:
     paths:
-      - 'knowledge/**'
+      - 'knowledge11/**'
   workflow_dispatch:
 
 jobs:
