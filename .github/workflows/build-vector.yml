@@ -33,7 +33,7 @@ jobs:
       - name: Build FAISS embeddings + keyword index
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
-        run: python sync/embedding_builder_github.py
+        run: python sync/embedding_builder_githubv3.py
 
       - name: Show what was built
         run: |
