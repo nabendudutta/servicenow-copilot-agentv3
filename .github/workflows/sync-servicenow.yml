@@ -43,14 +43,7 @@ jobs:
           SNOW_INSTANCE: ${{ secrets.SNOW_INSTANCE }}
           SNOW_USER:     ${{ secrets.SNOW_USER }}
           SNOW_PASSWORD: ${{ secrets.SNOW_PASSWORD }}
-        run: python sync/servicenow_sync.py
-      - name: Sync ServiceNow KB ( Live Incidents ) 
-        env:
-          SNOW_INSTANCE: ${{ secrets.SNOW_INSTANCE }}
-          SNOW_USER:     ${{ secrets.SNOW_USER }}
-          SNOW_PASSWORD: ${{ secrets.SNOW_PASSWORD }}
-        run: python sync/servicenow-live-incidents.py
-
+        run: python sync/servicenow_syncv2.py
       - name: Commit updated knowledge files
         run: |
           git config user.name  github-actions
