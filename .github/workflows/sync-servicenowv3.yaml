@@ -1,4 +1,4 @@
-name: Sync ServiceNow Knowledge
+name: Sync ServiceNow Knowledge version 3
 
 # ─── Triggers ────────────────────────────────────────────────────────────────
 # Three times a day + on-demand via workflow_dispatch
@@ -63,12 +63,6 @@ jobs:
           SNOW_USER:     ${{ secrets.SNOW_USER }}
           SNOW_PASSWORD: ${{ secrets.SNOW_PASSWORD }}
         run: python sync/servicenow_sync.py
-      - name: Sync ServiceNow KB ( Live Incidents ) 
-        env:
-          SNOW_INSTANCE: ${{ secrets.SNOW_INSTANCE }}
-          SNOW_USER:     ${{ secrets.SNOW_USER }}
-          SNOW_PASSWORD: ${{ secrets.SNOW_PASSWORD }}
-        run: python sync/servicenow-live-incidents.py
 
       # ── Commit generated Markdown files ─────────────────────────────────
       # Uses --no-rebase pull to avoid the stash/rebase fragility of the old approach.
