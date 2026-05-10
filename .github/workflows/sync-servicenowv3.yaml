@@ -3,10 +3,10 @@ name: Sync ServiceNow Knowledge version ( Backup)
 # ─── Triggers ────────────────────────────────────────────────────────────────
 # Three times a day + on-demand via workflow_dispatch
 on:
-  schedule:
-    - cron: '0  6 * * *'   # 06:00 UTC
-    - cron: '0 14 * * *'   # 14:00 UTC
-    - cron: '0 22 * * *'   # 22:00 UTC
+ # schedule:
+  #  - cron: '0  6 * * *'   # 06:00 UTC
+   # - cron: '0 14 * * *'   # 14:00 UTC
+    #- cron: '0 22 * * *'   # 22:00 UTC
   workflow_dispatch:
 
 # ─── Shared defaults ─────────────────────────────────────────────────────────
