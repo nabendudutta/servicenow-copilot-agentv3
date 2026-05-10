@@ -1,5 +1,6 @@
 {
-  "built_at": "2026-05-10T08:03:49.271189Z",
+  "built_at": "2026-05-10T16:05:40.718445Z",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
   "doc_count": 259,
   "chunk_count": 1896,
   "tables": [
@@ -43,7 +44,8 @@
           "total",
           "synced"
         ],
-        "excerpt": "ServiceNow Sync Summary"
+        "excerpt": "ServiceNow Sync Summary",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       }
     ],
     "change_request": [
@@ -126,7 +128,8 @@
           "testing",
           "sunday"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000001"
+        "excerpt": "CHANGE_REQUEST CHG0000001",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000002.md",
@@ -207,7 +210,8 @@
           "change_plan",
           "chg_model"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000002"
+        "excerpt": "CHANGE_REQUEST CHG0000002",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000003.md",
@@ -288,7 +292,8 @@
           "close_code",
           "successful"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000003"
+        "excerpt": "CHANGE_REQUEST CHG0000003",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000004.md",
@@ -369,7 +374,8 @@
           "conflict_status",
           "contact_type"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000004"
+        "excerpt": "CHANGE_REQUEST CHG0000004",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000005.md",
@@ -450,7 +456,8 @@
           "system",
           "administrator"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000005"
+        "excerpt": "CHANGE_REQUEST CHG0000005",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000006.md",
@@ -531,7 +538,8 @@
           "calendar_duration",
           "change_plan"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000006"
+        "excerpt": "CHANGE_REQUEST CHG0000006",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000007.md",
@@ -612,7 +620,8 @@
           "kettering",
           "approve"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000007"
+        "excerpt": "CHANGE_REQUEST CHG0000007",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000008.md",
@@ -693,7 +702,8 @@
           "cab_recommendation",
           "cab_required"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000008"
+        "excerpt": "CHANGE_REQUEST CHG0000008",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000009.md",
@@ -774,7 +784,8 @@
           "approval",
           "approved"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000009"
+        "excerpt": "CHANGE_REQUEST CHG0000009",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000010.md",
@@ -855,7 +866,8 @@
           "conflict_last_run",
           "conflict_status"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000010"
+        "excerpt": "CHANGE_REQUEST CHG0000010",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000011.md",
@@ -936,7 +948,8 @@
           "company",
           "conflict_last_run"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000011"
+        "excerpt": "CHANGE_REQUEST CHG0000011",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000012.md",
@@ -1017,7 +1030,8 @@
           "conflict_last_run",
           "conflict_status"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000012"
+        "excerpt": "CHANGE_REQUEST CHG0000012",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000013.md",
@@ -1098,7 +1112,8 @@
           "conflict_last_run",
           "conflict_status"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000013"
+        "excerpt": "CHANGE_REQUEST CHG0000013",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000014.md",
@@ -1179,7 +1194,8 @@
           "conflict_last_run",
           "conflict_status"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000014"
+        "excerpt": "CHANGE_REQUEST CHG0000014",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000015.md",
@@ -1260,7 +1276,8 @@
           "contact_type",
           "phone"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000015"
+        "excerpt": "CHANGE_REQUEST CHG0000015",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000020.md",
@@ -1341,7 +1358,8 @@
           "file",
           "backout"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000020"
+        "excerpt": "CHANGE_REQUEST CHG0000020",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000021.md",
@@ -1422,7 +1440,8 @@
           "example",
           "save"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000021"
+        "excerpt": "CHANGE_REQUEST CHG0000021",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000022.md",
@@ -1503,7 +1522,8 @@
           "check",
           "previous"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000022"
+        "excerpt": "CHANGE_REQUEST CHG0000022",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000023.md",
@@ -1584,7 +1604,8 @@
           "before",
           "demoting"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000023"
+        "excerpt": "CHANGE_REQUEST CHG0000023",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000024.md",
@@ -1665,7 +1686,8 @@
           "maintenance",
           "mode"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000024"
+        "excerpt": "CHANGE_REQUEST CHG0000024",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000025.md",
@@ -1746,7 +1768,8 @@
           "mode",
           "monitoring"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000025"
+        "excerpt": "CHANGE_REQUEST CHG0000025",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000026.md",
@@ -1827,7 +1850,8 @@
           "monitoring",
           "platform"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000026"
+        "excerpt": "CHANGE_REQUEST CHG0000026",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000027.md",
@@ -1908,7 +1932,8 @@
           "monitoring",
           "servicenow"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000027"
+        "excerpt": "CHANGE_REQUEST CHG0000027",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000028.md",
@@ -1989,7 +2014,8 @@
           "unmount",
           "server4"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000028"
+        "excerpt": "CHANGE_REQUEST CHG0000028",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000030.md",
@@ -2070,7 +2096,8 @@
           "correlation_display",
           "correlation_id"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000030"
+        "excerpt": "CHANGE_REQUEST CHG0000030",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000031.md",
@@ -2151,7 +2178,8 @@
           "copied_from",
           "correlation_display"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000031"
+        "excerpt": "CHANGE_REQUEST CHG0000031",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000032.md",
@@ -2232,7 +2260,8 @@
           "contract",
           "copied_from"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000032"
+        "excerpt": "CHANGE_REQUEST CHG0000032",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000033.md",
@@ -2313,7 +2342,8 @@
           "contact_type",
           "phone"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000033"
+        "excerpt": "CHANGE_REQUEST CHG0000033",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000034.md",
@@ -2394,7 +2424,8 @@
           "phone",
           "contract"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000034"
+        "excerpt": "CHANGE_REQUEST CHG0000034",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000035.md",
@@ -2475,7 +2506,8 @@
           "conflict_status",
           "contact_type"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000035"
+        "excerpt": "CHANGE_REQUEST CHG0000035",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000036.md",
@@ -2556,7 +2588,8 @@
           "phone",
           "contract"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000036"
+        "excerpt": "CHANGE_REQUEST CHG0000036",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000037.md",
@@ -2637,7 +2670,8 @@
           "approval_history",
           "history"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000037"
+        "excerpt": "CHANGE_REQUEST CHG0000037",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000038.md",
@@ -2718,7 +2752,8 @@
           "additional_assignee_list",
           "approval"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000038"
+        "excerpt": "CHANGE_REQUEST CHG0000038",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000039.md",
@@ -2799,7 +2834,8 @@
           "active",
           "activity_due"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000039"
+        "excerpt": "CHANGE_REQUEST CHG0000039",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000040.md",
@@ -2880,7 +2916,8 @@
           "approval_history",
           "history"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000040"
+        "excerpt": "CHANGE_REQUEST CHG0000040",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000041.md",
@@ -2961,7 +2998,8 @@
           "approval_history",
           "history"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000041"
+        "excerpt": "CHANGE_REQUEST CHG0000041",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000042.md",
@@ -3042,7 +3080,8 @@
           "approval_history",
           "history"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000042"
+        "excerpt": "CHANGE_REQUEST CHG0000042",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000043.md",
@@ -3123,7 +3162,8 @@
           "approval_history",
           "history"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000043"
+        "excerpt": "CHANGE_REQUEST CHG0000043",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000044.md",
@@ -3204,7 +3244,8 @@
           "db_block_buffer",
           "active"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000044"
+        "excerpt": "CHANGE_REQUEST CHG0000044",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000045.md",
@@ -3285,7 +3326,8 @@
           "approve",
           "task"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000045"
+        "excerpt": "CHANGE_REQUEST CHG0000045",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000046.md",
@@ -3366,7 +3408,8 @@
           "approve",
           "task"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000046"
+        "excerpt": "CHANGE_REQUEST CHG0000046",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000047.md",
@@ -3447,7 +3490,8 @@
           "approval",
           "approval_history"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000047"
+        "excerpt": "CHANGE_REQUEST CHG0000047",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000048.md",
@@ -3528,7 +3572,8 @@
           "unknown",
           "additional_assignee_list"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000048"
+        "excerpt": "CHANGE_REQUEST CHG0000048",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000049.md",
@@ -3609,7 +3654,8 @@
           "active",
           "activity_due"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000049"
+        "excerpt": "CHANGE_REQUEST CHG0000049",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000050.md",
@@ -3690,7 +3736,8 @@
           "approval_history",
           "history"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000050"
+        "excerpt": "CHANGE_REQUEST CHG0000050",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000051.md",
@@ -3771,7 +3818,8 @@
           "approval_history",
           "history"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000051"
+        "excerpt": "CHANGE_REQUEST CHG0000051",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000052.md",
@@ -3852,7 +3900,8 @@
           "approval",
           "approval_history"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000052"
+        "excerpt": "CHANGE_REQUEST CHG0000052",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000053.md",
@@ -3933,7 +3982,8 @@
           "approval",
           "approval_history"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000053"
+        "excerpt": "CHANGE_REQUEST CHG0000053",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000054.md",
@@ -4014,7 +4064,8 @@
           "active",
           "activity_due"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000054"
+        "excerpt": "CHANGE_REQUEST CHG0000054",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000055.md",
@@ -4095,7 +4146,8 @@
           "approve",
           "task"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000055"
+        "excerpt": "CHANGE_REQUEST CHG0000055",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000056.md",
@@ -4176,7 +4228,8 @@
           "task",
           "bernard"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000056"
+        "excerpt": "CHANGE_REQUEST CHG0000056",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000057.md",
@@ -4257,7 +4310,8 @@
           "approval",
           "approval_history"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000057"
+        "excerpt": "CHANGE_REQUEST CHG0000057",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000058.md",
@@ -4338,7 +4392,8 @@
           "unknown",
           "additional_assignee_list"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000058"
+        "excerpt": "CHANGE_REQUEST CHG0000058",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000059.md",
@@ -4419,7 +4474,8 @@
           "active",
           "activity_due"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000059"
+        "excerpt": "CHANGE_REQUEST CHG0000059",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000060.md",
@@ -4500,7 +4556,8 @@
           "approval_history",
           "history"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000060"
+        "excerpt": "CHANGE_REQUEST CHG0000060",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000061.md",
@@ -4581,7 +4638,8 @@
           "additional_assignee_list",
           "approval"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000061"
+        "excerpt": "CHANGE_REQUEST CHG0000061",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000062.md",
@@ -4662,7 +4720,8 @@
           "approval",
           "approval_history"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000062"
+        "excerpt": "CHANGE_REQUEST CHG0000062",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000063.md",
@@ -4743,7 +4802,8 @@
           "additional_assignee_list",
           "approval"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000063"
+        "excerpt": "CHANGE_REQUEST CHG0000063",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000064.md",
@@ -4824,7 +4884,8 @@
           "db_block_buffer",
           "active"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000064"
+        "excerpt": "CHANGE_REQUEST CHG0000064",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000065.md",
@@ -4905,7 +4966,8 @@
           "task",
           "luke"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000065"
+        "excerpt": "CHANGE_REQUEST CHG0000065",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000066.md",
@@ -4986,7 +5048,8 @@
           "approve",
           "task"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000066"
+        "excerpt": "CHANGE_REQUEST CHG0000066",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000067.md",
@@ -5067,7 +5130,8 @@
           "approval",
           "approval_history"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000067"
+        "excerpt": "CHANGE_REQUEST CHG0000067",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000068.md",
@@ -5148,7 +5212,8 @@
           "unknown",
           "additional_assignee_list"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000068"
+        "excerpt": "CHANGE_REQUEST CHG0000068",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000069.md",
@@ -5229,7 +5294,8 @@
           "validate",
           "active"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000069"
+        "excerpt": "CHANGE_REQUEST CHG0000069",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000070.md",
@@ -5310,7 +5376,8 @@
           "approval_history",
           "history"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000070"
+        "excerpt": "CHANGE_REQUEST CHG0000070",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000071.md",
@@ -5391,7 +5458,8 @@
           "approval_history",
           "history"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000071"
+        "excerpt": "CHANGE_REQUEST CHG0000071",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000072.md",
@@ -5472,7 +5540,8 @@
           "additional_assignee_list",
           "approval"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000072"
+        "excerpt": "CHANGE_REQUEST CHG0000072",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000073.md",
@@ -5553,7 +5622,8 @@
           "approval_history",
           "history"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000073"
+        "excerpt": "CHANGE_REQUEST CHG0000073",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000074.md",
@@ -5634,7 +5704,8 @@
           "rollback",
           "db_block_buffer"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000074"
+        "excerpt": "CHANGE_REQUEST CHG0000074",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000075.md",
@@ -5715,7 +5786,8 @@
           "christen",
           "mitchell"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000075"
+        "excerpt": "CHANGE_REQUEST CHG0000075",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000076.md",
@@ -5796,7 +5868,8 @@
           "approve",
           "task"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000076"
+        "excerpt": "CHANGE_REQUEST CHG0000076",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000077.md",
@@ -5877,7 +5950,8 @@
           "approval",
           "approval_history"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000077"
+        "excerpt": "CHANGE_REQUEST CHG0000077",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000078.md",
@@ -5958,7 +6032,8 @@
           "unknown",
           "additional_assignee_list"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000078"
+        "excerpt": "CHANGE_REQUEST CHG0000078",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000079.md",
@@ -6039,7 +6114,8 @@
           "validate",
           "active"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000079"
+        "excerpt": "CHANGE_REQUEST CHG0000079",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000080.md",
@@ -6120,7 +6196,8 @@
           "approval_history",
           "history"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000080"
+        "excerpt": "CHANGE_REQUEST CHG0000080",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000081.md",
@@ -6201,7 +6278,8 @@
           "approval",
           "approval_history"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000081"
+        "excerpt": "CHANGE_REQUEST CHG0000081",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000082.md",
@@ -6282,7 +6360,8 @@
           "approval_history",
           "history"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000082"
+        "excerpt": "CHANGE_REQUEST CHG0000082",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000083.md",
@@ -6363,7 +6442,8 @@
           "approval",
           "approval_history"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000083"
+        "excerpt": "CHANGE_REQUEST CHG0000083",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000084.md",
@@ -6444,7 +6524,8 @@
           "db_block_buffer",
           "active"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000084"
+        "excerpt": "CHANGE_REQUEST CHG0000084",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000085.md",
@@ -6525,7 +6606,8 @@
           "approve",
           "task"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000085"
+        "excerpt": "CHANGE_REQUEST CHG0000085",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000086.md",
@@ -6606,7 +6688,8 @@
           "technical",
           "approvals"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000086"
+        "excerpt": "CHANGE_REQUEST CHG0000086",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000087.md",
@@ -6687,7 +6770,8 @@
           "approval",
           "approval_history"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000087"
+        "excerpt": "CHANGE_REQUEST CHG0000087",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000088.md",
@@ -6768,7 +6852,8 @@
           "unknown",
           "additional_assignee_list"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000088"
+        "excerpt": "CHANGE_REQUEST CHG0000088",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000089.md",
@@ -6849,7 +6934,8 @@
           "validate",
           "active"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000089"
+        "excerpt": "CHANGE_REQUEST CHG0000089",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000090.md",
@@ -6930,7 +7016,8 @@
           "approval_history",
           "history"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000090"
+        "excerpt": "CHANGE_REQUEST CHG0000090",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000091.md",
@@ -7011,7 +7098,8 @@
           "approval",
           "approval_history"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000091"
+        "excerpt": "CHANGE_REQUEST CHG0000091",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000092.md",
@@ -7092,7 +7180,8 @@
           "additional_assignee_list",
           "approval"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000092"
+        "excerpt": "CHANGE_REQUEST CHG0000092",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000093.md",
@@ -7173,7 +7262,8 @@
           "additional_assignee_list",
           "approval"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000093"
+        "excerpt": "CHANGE_REQUEST CHG0000093",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000094.md",
@@ -7254,7 +7344,8 @@
           "active",
           "activity_due"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000094"
+        "excerpt": "CHANGE_REQUEST CHG0000094",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000095.md",
@@ -7335,7 +7426,8 @@
           "mitchell",
           "approve"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000095"
+        "excerpt": "CHANGE_REQUEST CHG0000095",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0000096.md",
@@ -7416,7 +7508,8 @@
           "wilson",
           "approve"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0000096"
+        "excerpt": "CHANGE_REQUEST CHG0000096",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0002000.md",
@@ -7497,7 +7590,8 @@
           "copied_from",
           "correlation_display"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0002000"
+        "excerpt": "CHANGE_REQUEST CHG0002000",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0002001.md",
@@ -7578,7 +7672,8 @@
           "copied_from",
           "correlation_display"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0002001"
+        "excerpt": "CHANGE_REQUEST CHG0002001",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0030004.md",
@@ -7659,7 +7754,8 @@
           "necessary",
           "finalize"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0030004"
+        "excerpt": "CHANGE_REQUEST CHG0030004",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0030005.md",
@@ -7740,7 +7836,8 @@
           "necessary",
           "finalize"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0030005"
+        "excerpt": "CHANGE_REQUEST CHG0030005",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0030006.md",
@@ -7821,7 +7918,8 @@
           "justification",
           "necessary"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0030006"
+        "excerpt": "CHANGE_REQUEST CHG0030006",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0030007.md",
@@ -7902,7 +8000,8 @@
           "stability",
           "compliance"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0030007"
+        "excerpt": "CHANGE_REQUEST CHG0030007",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0030008.md",
@@ -7983,7 +8082,8 @@
           "memory",
           "leaks"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0030008"
+        "excerpt": "CHANGE_REQUEST CHG0030008",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0040001.md",
@@ -8064,7 +8164,8 @@
           "cabling",
           "test"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0040001"
+        "excerpt": "CHANGE_REQUEST CHG0040001",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0040002.md",
@@ -8145,7 +8246,8 @@
           "associated",
           "cabling"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0040002"
+        "excerpt": "CHANGE_REQUEST CHG0040002",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0040003.md",
@@ -8226,7 +8328,8 @@
           "conflict_last_run",
           "conflict_status"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0040003"
+        "excerpt": "CHANGE_REQUEST CHG0040003",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0040004.md",
@@ -8307,7 +8410,8 @@
           "conflict_last_run",
           "conflict_status"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0040004"
+        "excerpt": "CHANGE_REQUEST CHG0040004",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0040005.md",
@@ -8388,7 +8492,8 @@
           "cmdb",
           "backout"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0040005"
+        "excerpt": "CHANGE_REQUEST CHG0040005",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0040006.md",
@@ -8469,7 +8574,8 @@
           "servicenow",
           "cmdb"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0040006"
+        "excerpt": "CHANGE_REQUEST CHG0040006",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/change_request/CHG0040007.md",
@@ -8550,7 +8656,8 @@
           "company",
           "conflict_last_run"
         ],
-        "excerpt": "CHANGE_REQUEST CHG0040007"
+        "excerpt": "CHANGE_REQUEST CHG0040007",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       }
     ],
     "incident": [
@@ -8633,7 +8740,8 @@
           "business_service",
           "business_stc"
         ],
-        "excerpt": "- **Number**: INC0000001"
+        "excerpt": "- **Number**: INC0000001",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000002.md",
@@ -8714,7 +8822,8 @@
           "comments",
           "system"
         ],
-        "excerpt": "**Network file shares access issue**"
+        "excerpt": "**Network file shares access issue**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000003.md",
@@ -8795,7 +8904,8 @@
           "cmdb_ci",
           "comments"
         ],
-        "excerpt": "**Wireless access is down in my area**"
+        "excerpt": "**Wireless access is down in my area**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000004.md",
@@ -8876,7 +8986,8 @@
           "calendar_stc",
           "caller_id"
         ],
-        "excerpt": "**Forgot email password**"
+        "excerpt": "**Forgot email password**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000005.md",
@@ -8957,7 +9068,8 @@
           "cause",
           "child_incidents"
         ],
-        "excerpt": "**CPU load high for over 10 minutes**"
+        "excerpt": "**CPU load high for over 10 minutes**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000006.md",
@@ -9038,7 +9150,8 @@
           "business_stc",
           "calendar_duration"
         ],
-        "excerpt": "**Hangs when trying to print VISIO document**"
+        "excerpt": "**Hangs when trying to print VISIO document**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000007.md",
@@ -9119,7 +9232,8 @@
           "glide",
           "maint"
         ],
-        "excerpt": "**Need access to sales DB for the West**"
+        "excerpt": "**Need access to sales DB for the West**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000008.md",
@@ -9200,7 +9314,8 @@
           "child_incidents",
           "close_code"
         ],
-        "excerpt": "**Printer in my office is out of toner**"
+        "excerpt": "**Printer in my office is out of toner**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000009.md",
@@ -9281,7 +9396,8 @@
           "business_duration",
           "days"
         ],
-        "excerpt": "**Reset my password**"
+        "excerpt": "**Reset my password**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000010.md",
@@ -9362,7 +9478,8 @@
           "close_code",
           "close_notes"
         ],
-        "excerpt": "**Need Oracle 10GR2 installed**"
+        "excerpt": "**Need Oracle 10GR2 installed**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000011.md",
@@ -9443,7 +9560,8 @@
           "hours",
           "minutes"
         ],
-        "excerpt": "**Need new Blackberry set up**"
+        "excerpt": "**Need new Blackberry set up**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000012.md",
@@ -9524,7 +9642,8 @@
           "business_duration",
           "days"
         ],
-        "excerpt": "**Customer didn't receive eFax**"
+        "excerpt": "**Customer didn't receive eFax**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000013.md",
@@ -9605,7 +9724,8 @@
           "minutes",
           "business_impact"
         ],
-        "excerpt": "**EMAIL is slow when an attachment is involved**"
+        "excerpt": "**EMAIL is slow when an attachment is involved**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000014.md",
@@ -9686,7 +9806,8 @@
           "caller_id",
           "f298d2d2c611227b0106c6be7f154bc8"
         ],
-        "excerpt": "**Missing my home directory**"
+        "excerpt": "**Missing my home directory**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000015.md",
@@ -9767,7 +9888,8 @@
           "calendar_duration",
           "calendar_stc"
         ],
-        "excerpt": "**I can't launch my VPN client since the last software update**"
+        "excerpt": "**I can't launch my VPN client since the last software update**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000016.md",
@@ -9848,7 +9970,8 @@
           "caller_id",
           "f298d2d2c611227b0106c6be7f154bc8"
         ],
-        "excerpt": "**Rain is leaking on main DNS Server**"
+        "excerpt": "**Rain is leaking on main DNS Server**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000017.md",
@@ -9929,7 +10052,8 @@
           "caller_id",
           "cause"
         ],
-        "excerpt": "**How do I create a sub-folder**"
+        "excerpt": "**How do I create a sub-folder**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000018.md",
@@ -10010,7 +10134,8 @@
           "minute",
           "calendar_stc"
         ],
-        "excerpt": "**Sales forecast spreadsheet is READ ONLY**"
+        "excerpt": "**Sales forecast spreadsheet is READ ONLY**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000019.md",
@@ -10091,7 +10216,8 @@
           "closed_by",
           "cmdb_ci"
         ],
-        "excerpt": "**Can't launch 64-bit Windows 7 virtual machine**"
+        "excerpt": "**Can't launch 64-bit Windows 7 virtual machine**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000020.md",
@@ -10172,7 +10298,8 @@
           "caller_id",
           "cause"
         ],
-        "excerpt": "**I need a replacement iPhone, please**"
+        "excerpt": "**I need a replacement iPhone, please**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000021.md",
@@ -10253,7 +10380,8 @@
           "business_service",
           "business_stc"
         ],
-        "excerpt": "**New employee hire**"
+        "excerpt": "**New employee hire**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000024.md",
@@ -10334,7 +10462,8 @@
           "days",
           "hours"
         ],
-        "excerpt": "**Issue with a web page on wiki**"
+        "excerpt": "**Issue with a web page on wiki**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000025.md",
@@ -10415,7 +10544,8 @@
           "child_incidents",
           "close_code"
         ],
-        "excerpt": "**Need to add more memory to laptop**"
+        "excerpt": "**Need to add more memory to laptop**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000026.md",
@@ -10496,7 +10626,8 @@
           "caller_id",
           "cause"
         ],
-        "excerpt": "**Seem to have an issue with my hard drive...**"
+        "excerpt": "**Seem to have an issue with my hard drive...**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000027.md",
@@ -10577,7 +10708,8 @@
           "caller_id",
           "cause"
         ],
-        "excerpt": "**Please remove the latest hotfix from my PC**"
+        "excerpt": "**Please remove the latest hotfix from my PC**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000028.md",
@@ -10658,7 +10790,8 @@
           "business_duration",
           "days"
         ],
-        "excerpt": "**My disk is still having issues. Can't delete a file**"
+        "excerpt": "**My disk is still having issues. Can't delete a file**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000029.md",
@@ -10739,7 +10872,8 @@
           "cmdb_ci",
           "comments"
         ],
-        "excerpt": "**I can't get my weather report**"
+        "excerpt": "**I can't get my weather report**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000030.md",
@@ -10820,7 +10954,8 @@
           "calendar_duration",
           "calendar_stc"
         ],
-        "excerpt": "**Lost connection to the wireless network**"
+        "excerpt": "**Lost connection to the wireless network**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000031.md",
@@ -10901,7 +11036,8 @@
           "cmdb_ci",
           "comments"
         ],
-        "excerpt": "**Need help with Remedy. Can we configure UI?**"
+        "excerpt": "**Need help with Remedy. Can we configure UI?**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000032.md",
@@ -10982,7 +11118,8 @@
           "business_stc",
           "calendar_duration"
         ],
-        "excerpt": "**EMAIL Server Down Again**"
+        "excerpt": "**EMAIL Server Down Again**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000033.md",
@@ -11063,7 +11200,8 @@
           "caller_id",
           "cause"
         ],
-        "excerpt": "**File Server is 80% full - Needs upgrade**"
+        "excerpt": "**File Server is 80% full - Needs upgrade**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000034.md",
@@ -11144,7 +11282,8 @@
           "calendar_stc",
           "caller_id"
         ],
-        "excerpt": "**Does not look like a backup occurred last night**"
+        "excerpt": "**Does not look like a backup occurred last night**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000035.md",
@@ -11225,7 +11364,8 @@
           "business_service",
           "business_stc"
         ],
-        "excerpt": "**Reset my password**"
+        "excerpt": "**Reset my password**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000036.md",
@@ -11306,7 +11446,8 @@
           "minutes",
           "business_impact"
         ],
-        "excerpt": "**Issue with networking**"
+        "excerpt": "**Issue with networking**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000037.md",
@@ -11387,7 +11528,8 @@
           "close_notes",
           "closed_at"
         ],
-        "excerpt": "**Request for a new service**"
+        "excerpt": "**Request for a new service**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000038.md",
@@ -11468,7 +11610,8 @@
           "assignment_group",
           "d625dccec0a8016700a222a0f7900d06"
         ],
-        "excerpt": "**my PDF docs are all locked from editing**"
+        "excerpt": "**my PDF docs are all locked from editing**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000039.md",
@@ -11549,7 +11692,8 @@
           "routing",
           "diego"
         ],
-        "excerpt": "**Trouble getting to Oregon mail server**"
+        "excerpt": "**Trouble getting to Oregon mail server**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000040.md",
@@ -11630,7 +11774,8 @@
           "closed_at",
           "closed_by"
         ],
-        "excerpt": "**JavaScript error on hiring page of corporate website**"
+        "excerpt": "**JavaScript error on hiring page of corporate website**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000041.md",
@@ -11711,7 +11856,8 @@
           "comments",
           "additional"
         ],
-        "excerpt": "**My desk phone does not work**"
+        "excerpt": "**My desk phone does not work**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000044.md",
@@ -11792,7 +11938,8 @@
           "north",
           "america"
         ],
-        "excerpt": "**Can't log into SAP from my laptop today**"
+        "excerpt": "**Can't log into SAP from my laptop today**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000046.md",
@@ -11873,7 +12020,8 @@
           "system",
           "administrator"
         ],
-        "excerpt": "**Can't access SFA software**"
+        "excerpt": "**Can't access SFA software**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000047.md",
@@ -11954,7 +12102,8 @@
           "a9a2d111c611227601fb37542399caa8",
           "comments"
         ],
-        "excerpt": "- **Number**: INC0000047"
+        "excerpt": "- **Number**: INC0000047",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000048.md",
@@ -12035,7 +12184,8 @@
           "cmdb_ci",
           "a9c0c8d2c6112276018f7705562f9cb0"
         ],
-        "excerpt": "**Having problems with Sales Tools performance**"
+        "excerpt": "**Having problems with Sales Tools performance**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000049.md",
@@ -12116,7 +12266,8 @@
           "closed_by",
           "cmdb_ci"
         ],
-        "excerpt": "**Network storage unavailable**"
+        "excerpt": "**Network storage unavailable**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000050.md",
@@ -12197,7 +12348,8 @@
           "child_incidents",
           "close_code"
         ],
-        "excerpt": "**Can't access Exchange server - is it down?**"
+        "excerpt": "**Can't access Exchange server - is it down?**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000051.md",
@@ -12278,7 +12430,8 @@
           "close_code",
           "close_notes"
         ],
-        "excerpt": "**Manager can't access SAP Controlling application**"
+        "excerpt": "**Manager can't access SAP Controlling application**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000052.md",
@@ -12359,7 +12512,8 @@
           "closed_at",
           "closed_by"
         ],
-        "excerpt": "**SAP Financial Accounting application appears to be down**"
+        "excerpt": "**SAP Financial Accounting application appears to be down**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000053.md",
@@ -12440,7 +12594,8 @@
           "caller_id",
           "cause"
         ],
-        "excerpt": "**The SAP HR application is not accessible**"
+        "excerpt": "**The SAP HR application is not accessible**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000054.md",
@@ -12521,7 +12676,8 @@
           "closed_by",
           "cmdb_ci"
         ],
-        "excerpt": "**SAP Materials Management is slow or there is an outage**"
+        "excerpt": "**SAP Materials Management is slow or there is an outage**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000055.md",
@@ -12602,7 +12758,8 @@
           "closed_by",
           "cmdb_ci"
         ],
-        "excerpt": "**SAP Sales app is not accessible**"
+        "excerpt": "**SAP Sales app is not accessible**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000057.md",
@@ -12683,7 +12840,8 @@
           "comments_and_work_notes",
           "company"
         ],
-        "excerpt": "**Performance problems with wifi**"
+        "excerpt": "**Performance problems with wifi**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000058.md",
@@ -12764,7 +12922,8 @@
           "child_incidents",
           "close_code"
         ],
-        "excerpt": "**Performance problems with email**"
+        "excerpt": "**Performance problems with email**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000059.md",
@@ -12845,7 +13004,8 @@
           "contact_type",
           "self-service"
         ],
-        "excerpt": "**Unable to access team file share**"
+        "excerpt": "**Unable to access team file share**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000060.md",
@@ -12926,7 +13086,8 @@
           "close_code",
           "solved"
         ],
-        "excerpt": "**Unable to connect to email**"
+        "excerpt": "**Unable to connect to email**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0000601.md",
@@ -13007,7 +13168,8 @@
           "closed_at",
           "closed_by"
         ],
-        "excerpt": "**The USB port on my PC stopped working**"
+        "excerpt": "**The USB port on my PC stopped working**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0001990.md",
@@ -13088,7 +13250,8 @@
           "correlation_display",
           "correlation_id"
         ],
-        "excerpt": "**Unable to access the personal details section in payroll portal**"
+        "excerpt": "**Unable to access the personal details section in payroll portal**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0007001.md",
@@ -13169,7 +13332,8 @@
           "comments_and_work_notes",
           "work"
         ],
-        "excerpt": "**Employee payroll application server is down.**"
+        "excerpt": "**Employee payroll application server is down.**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0007002.md",
@@ -13250,7 +13414,8 @@
           "work",
           "notes"
         ],
-        "excerpt": "**Need access to the common drive.**"
+        "excerpt": "**Need access to the common drive.**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0008001.md",
@@ -13331,7 +13496,8 @@
           "expected_start",
           "follow_up"
         ],
-        "excerpt": "- **Number**: INC0008001"
+        "excerpt": "- **Number**: INC0008001",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0008111.md",
@@ -13412,7 +13578,8 @@
           "follow_up",
           "group_list"
         ],
-        "excerpt": "- **Number**: INC0008111"
+        "excerpt": "- **Number**: INC0008111",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0008112.md",
@@ -13493,7 +13660,8 @@
           "normal",
           "expected_start"
         ],
-        "excerpt": "**Assessment :  ATF Assessor**"
+        "excerpt": "**Assessment :  ATF Assessor**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0009001.md",
@@ -13574,7 +13742,8 @@
           "changed",
           "company"
         ],
-        "excerpt": "**Unable to post content on a Wiki page**"
+        "excerpt": "**Unable to post content on a Wiki page**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0009002.md",
@@ -13655,7 +13824,8 @@
           "permanently",
           "close_notes"
         ],
-        "excerpt": "**My computer is not detecting the headphone device**"
+        "excerpt": "**My computer is not detecting the headphone device**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0009003.md",
@@ -13736,7 +13906,8 @@
           "solved",
           "work"
         ],
-        "excerpt": "**Cannot sign into the company portal app**"
+        "excerpt": "**Cannot sign into the company portal app**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0009004.md",
@@ -13817,7 +13988,8 @@
           "cause",
           "child_incidents"
         ],
-        "excerpt": "**Defect tracking tool is down.**"
+        "excerpt": "**Defect tracking tool is down.**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0009005.md",
@@ -13898,7 +14070,8 @@
           "criticality",
           "company"
         ],
-        "excerpt": "**Email server is down.**"
+        "excerpt": "**Email server is down.**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0009009.md",
@@ -13979,7 +14152,8 @@
           "contract",
           "correlation_display"
         ],
-        "excerpt": "**Unable to access the shared folder.**"
+        "excerpt": "**Unable to access the shared folder.**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0010001.md",
@@ -14060,7 +14234,8 @@
           "company",
           "contact_type"
         ],
-        "excerpt": "**how to create Redhat Logical volume **"
+        "excerpt": "**how to create Redhat Logical volume **",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0010002.md",
@@ -14141,7 +14316,8 @@
           "nvidia",
           "driver"
         ],
-        "excerpt": "**RHEL 9 system fails to boot after kernel update**"
+        "excerpt": "**RHEL 9 system fails to boot after kernel update**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0010003.md",
@@ -14222,7 +14398,8 @@
           "partition",
           "accumulated"
         ],
-        "excerpt": "**Jenkins pipeline failing with 'No space left on device' error**"
+        "excerpt": "**Jenkins pipeline failing with 'No space left on device' error**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0010004.md",
@@ -14303,7 +14480,8 @@
           "replica",
           "causing"
         ],
-        "excerpt": "**OpenShift pods stuck in CrashLoopBackOff after namespace resource quota exceeded**"
+        "excerpt": "**OpenShift pods stuck in CrashLoopBackOff after namespace resource quota exceeded**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0010005.md",
@@ -14384,7 +14562,8 @@
           "rotated",
           "secrets"
         ],
-        "excerpt": "**Ansible Tower job template failing with SSH authentication error on RHEL hosts**"
+        "excerpt": "**Ansible Tower job template failing with SSH authentication error on RHEL hosts**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0010006.md",
@@ -14465,7 +14644,8 @@
           "applied",
           "rhel"
         ],
-        "excerpt": "**GitLab CI/CD runners unresponsive \u2014 all pipelines queued**"
+        "excerpt": "**GitLab CI/CD runners unresponsive \u2014 all pipelines queued**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0010007.md",
@@ -14546,7 +14726,8 @@
           "trust",
           "store"
         ],
-        "excerpt": "**Podman containers on RHEL 8 unable to pull images from private registry**"
+        "excerpt": "**Podman containers on RHEL 8 unable to pull images from private registry**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0010008.md",
@@ -14627,7 +14808,8 @@
           "subnet",
           "process"
         ],
-        "excerpt": "**Terraform state file lock not releasing after failed apply in Azure**"
+        "excerpt": "**Terraform state file lock not releasing after failed apply in Azure**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0010009.md",
@@ -14708,7 +14890,8 @@
           "corrupted",
           "incomplete"
         ],
-        "excerpt": "**Red Hat Satellite 6 content sync failing \u2014 repository metadata error**"
+        "excerpt": "**Red Hat Satellite 6 content sync failing \u2014 repository metadata error**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0010010.md",
@@ -14789,7 +14972,8 @@
           "create",
           "patch"
         ],
-        "excerpt": "**ArgoCD application out of sync after Kubernetes RBAC policy change**"
+        "excerpt": "**ArgoCD application out of sync after Kubernetes RBAC policy change**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/incident/INC0010011.md",
@@ -14870,7 +15054,8 @@
           "cause",
           "analysis"
         ],
-        "excerpt": "**Prometheus alertmanager not sending alerts \u2014 SMTP relay misconfiguration**"
+        "excerpt": "**Prometheus alertmanager not sending alerts \u2014 SMTP relay misconfiguration**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       }
     ],
     "kb_knowledge": [
@@ -14953,7 +15138,8 @@
           "zoho",
           "services"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0000001"
+        "excerpt": "KB_KNOWLEDGE KB0000001",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0000002.md",
@@ -15034,7 +15220,8 @@
           "pressing",
           "ctrl"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0000002"
+        "excerpt": "KB_KNOWLEDGE KB0000002",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0000003.md",
@@ -15115,7 +15302,8 @@
           "wide-rounded",
           "solid"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0000003"
+        "excerpt": "KB_KNOWLEDGE KB0000003",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0000004.md",
@@ -15196,7 +15384,8 @@
           "sys_id",
           "sys_mod_count"
         ],
-        "excerpt": "KB_KNOWLEDGE \u2014 KB0000004"
+        "excerpt": "KB_KNOWLEDGE \u2014 KB0000004",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0000005.md",
@@ -15277,7 +15466,8 @@
           "after",
           "enter"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0000005"
+        "excerpt": "KB_KNOWLEDGE KB0000005",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0000006.md",
@@ -15358,7 +15548,8 @@
           "collegiate",
           "dictionary"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0000006"
+        "excerpt": "KB_KNOWLEDGE KB0000006",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0000007.md",
@@ -15439,7 +15630,8 @@
           "upon",
           "return"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0000007"
+        "excerpt": "KB_KNOWLEDGE KB0000007",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0000008.md",
@@ -15520,7 +15712,8 @@
           "bottom",
           "left"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0000008"
+        "excerpt": "KB_KNOWLEDGE KB0000008",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0000009.md",
@@ -15601,7 +15794,8 @@
           "holder",
           "given"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0000009"
+        "excerpt": "KB_KNOWLEDGE KB0000009",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0000010.md",
@@ -15682,7 +15876,8 @@
           "replaceable",
           "units"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0000010"
+        "excerpt": "KB_KNOWLEDGE KB0000010",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0000011.md",
@@ -15763,7 +15958,8 @@
           "consider",
           "following"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0000011"
+        "excerpt": "KB_KNOWLEDGE KB0000011",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0000012.md",
@@ -15844,7 +16040,8 @@
           "html",
           "text"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0000012"
+        "excerpt": "KB_KNOWLEDGE KB0000012",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0000013.md",
@@ -15925,7 +16122,8 @@
           "finder",
           "option"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0000013"
+        "excerpt": "KB_KNOWLEDGE KB0000013",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0000014.md",
@@ -16006,7 +16204,8 @@
           "base_version",
           "can_read_user_criteria"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0000014"
+        "excerpt": "KB_KNOWLEDGE KB0000014",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0000015.md",
@@ -16087,7 +16286,8 @@
           "beyond",
           "basic"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0000015"
+        "excerpt": "KB_KNOWLEDGE KB0000015",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0000016.md",
@@ -16168,7 +16368,8 @@
           "meeting",
           "send"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0000016"
+        "excerpt": "KB_KNOWLEDGE KB0000016",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0000017.md",
@@ -16249,7 +16450,8 @@
           "wiki",
           "windows_key"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0000017"
+        "excerpt": "KB_KNOWLEDGE KB0000017",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0000018.md",
@@ -16330,7 +16532,8 @@
           "limitations",
           "functionality"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0000018"
+        "excerpt": "KB_KNOWLEDGE KB0000018",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0000019.md",
@@ -16411,7 +16614,8 @@
           "points",
           "finish"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0000019"
+        "excerpt": "KB_KNOWLEDGE KB0000019",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0000020.md",
@@ -16492,7 +16696,8 @@
           "calendar",
           "mail"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0000020"
+        "excerpt": "KB_KNOWLEDGE KB0000020",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0000021.md",
@@ -16573,7 +16778,8 @@
           "core",
           "memory"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0000021"
+        "excerpt": "KB_KNOWLEDGE KB0000021",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0000022.md",
@@ -16654,7 +16860,8 @@
           "vista",
           "start"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0000022"
+        "excerpt": "KB_KNOWLEDGE KB0000022",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0000023.md",
@@ -16735,7 +16942,8 @@
           "sys_created_on",
           "sys_domain"
         ],
-        "excerpt": "KB_KNOWLEDGE \u2014 KB0000023"
+        "excerpt": "KB_KNOWLEDGE \u2014 KB0000023",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0000024.md",
@@ -16816,7 +17024,8 @@
           "file",
           "formats"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0000024"
+        "excerpt": "KB_KNOWLEDGE KB0000024",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0000025.md",
@@ -16897,7 +17106,8 @@
           "exist",
           "folder"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0000025"
+        "excerpt": "KB_KNOWLEDGE KB0000025",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0000026.md",
@@ -16978,7 +17188,8 @@
           "e-mail",
           "adding"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0000026"
+        "excerpt": "KB_KNOWLEDGE KB0000026",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0000027.md",
@@ -17059,7 +17270,8 @@
           "disable_commenting",
           "disable_suggesting"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0000027"
+        "excerpt": "KB_KNOWLEDGE KB0000027",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0000028.md",
@@ -17140,7 +17352,8 @@
           "asking",
           "click"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0000028"
+        "excerpt": "KB_KNOWLEDGE KB0000028",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0000029.md",
@@ -17221,7 +17434,8 @@
           "advertise",
           "commonly"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0000029"
+        "excerpt": "KB_KNOWLEDGE KB0000029",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0000030.md",
@@ -17302,7 +17516,8 @@
           "either",
           "icon"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0000030"
+        "excerpt": "KB_KNOWLEDGE KB0000030",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0000031.md",
@@ -17383,7 +17598,8 @@
           "numbers",
           "next"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0000031"
+        "excerpt": "KB_KNOWLEDGE KB0000031",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0000032.md",
@@ -17464,7 +17680,8 @@
           "move",
           "pointer"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0000032"
+        "excerpt": "KB_KNOWLEDGE KB0000032",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0000033.md",
@@ -17545,7 +17762,8 @@
           "latest",
           "updates"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0000033"
+        "excerpt": "KB_KNOWLEDGE KB0000033",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0000051.md",
@@ -17626,7 +17844,8 @@
           "sys_domain",
           "global"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0000051"
+        "excerpt": "KB_KNOWLEDGE KB0000051",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0000052.md",
@@ -17707,7 +17926,8 @@
           "a074401f53dc23004247ddeeff7b122a",
           "sys_class_name"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0000052"
+        "excerpt": "KB_KNOWLEDGE KB0000052",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0000053.md",
@@ -17788,7 +18008,8 @@
           "admin",
           "sys_created_on"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0000053"
+        "excerpt": "KB_KNOWLEDGE KB0000053",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0005001.md",
@@ -17869,7 +18090,8 @@
           "version",
           "primary"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0005001"
+        "excerpt": "KB_KNOWLEDGE KB0005001",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0005010.md",
@@ -17950,7 +18172,8 @@
           "disk",
           "drive"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0005010"
+        "excerpt": "KB_KNOWLEDGE KB0005010",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0005012.md",
@@ -18031,7 +18254,8 @@
           "direct",
           "disable_commenting"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0005012"
+        "excerpt": "KB_KNOWLEDGE KB0005012",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0005014.md",
@@ -18112,7 +18336,8 @@
           "sys_id",
           "sys_mod_count"
         ],
-        "excerpt": "KB_KNOWLEDGE \u2014 KB0005014"
+        "excerpt": "KB_KNOWLEDGE \u2014 KB0005014",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0010002.md",
@@ -18193,7 +18418,8 @@
           "sys_created_by",
           "admin"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0010002"
+        "excerpt": "KB_KNOWLEDGE KB0010002",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0010004.md",
@@ -18274,7 +18500,8 @@
           "admin",
           "sys_created_on"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0010004"
+        "excerpt": "KB_KNOWLEDGE KB0010004",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0010038.md",
@@ -18355,7 +18582,8 @@
           "sys_class_name",
           "kb_template_how_to"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0010038"
+        "excerpt": "KB_KNOWLEDGE KB0010038",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB0010039.md",
@@ -18436,7 +18664,8 @@
           "sys_class_name",
           "kb_template_how_to"
         ],
-        "excerpt": "KB_KNOWLEDGE KB0010039"
+        "excerpt": "KB_KNOWLEDGE KB0010039",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/kb_knowledge/KB99999999.md",
@@ -18517,7 +18746,8 @@
           "sends",
           "messages"
         ],
-        "excerpt": "KB_KNOWLEDGE KB99999999"
+        "excerpt": "KB_KNOWLEDGE KB99999999",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       }
     ],
     "problem": [
@@ -18600,7 +18830,8 @@
           "due_date",
           "duplicate_of"
         ],
-        "excerpt": "**Windows XP SP2 causing errors in Enterprise**"
+        "excerpt": "**Windows XP SP2 causing errors in Enterprise**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/problem/PRB0000002.md",
@@ -18681,7 +18912,8 @@
           "contact_type",
           "contract"
         ],
-        "excerpt": "**2nd Floor File Server Short on Space"
+        "excerpt": "**2nd Floor File Server Short on Space",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/problem/PRB0000003.md",
@@ -18762,7 +18994,8 @@
           "first_reported_by_task",
           "inc0000020"
         ],
-        "excerpt": "**Request for a Blackberry**"
+        "excerpt": "**Request for a Blackberry**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/problem/PRB0000004.md",
@@ -18843,7 +19076,8 @@
           "normal",
           "expected_start"
         ],
-        "excerpt": "**Boot with shift key held down**"
+        "excerpt": "**Boot with shift key held down**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/problem/PRB0000006.md",
@@ -18924,7 +19158,8 @@
           "comments",
           "comments_and_work_notes"
         ],
-        "excerpt": "**Can't access SFA software**"
+        "excerpt": "**Can't access SFA software**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/problem/PRB0000007.md",
@@ -19005,7 +19240,8 @@
           "expected_start",
           "first_reported_by_task"
         ],
-        "excerpt": "- **Number**: PRB0000007"
+        "excerpt": "- **Number**: PRB0000007",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/problem/PRB0000008.md",
@@ -19086,7 +19322,8 @@
           "fix_at",
           "fix_by"
         ],
-        "excerpt": "**Hang when trying to print VISIO document**"
+        "excerpt": "**Hang when trying to print VISIO document**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/problem/PRB0000010.md",
@@ -19167,7 +19404,8 @@
           "fix_by",
           "fix_communicated_at"
         ],
-        "excerpt": "- **Number**: PRB0000010"
+        "excerpt": "- **Number**: PRB0000010",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/problem/PRB0000011.md",
@@ -19248,7 +19486,8 @@
           "comments",
           "comments_and_work_notes"
         ],
-        "excerpt": "**Unknown source of SAP outage**"
+        "excerpt": "**Unknown source of SAP outage**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/problem/PRB0000012.md",
@@ -19329,7 +19568,8 @@
           "correlation_display",
           "correlation_id"
         ],
-        "excerpt": "**Cannot disable wireless when plug into an Ethernet port**"
+        "excerpt": "**Cannot disable wireless when plug into an Ethernet port**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/problem/PRB0000014.md",
@@ -19410,7 +19650,8 @@
           "contact_type",
           "contract"
         ],
-        "excerpt": "**My laptop is performing very badly**"
+        "excerpt": "**My laptop is performing very badly**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/problem/PRB0000029.md",
@@ -19491,7 +19732,8 @@
           "contract",
           "correlation_display"
         ],
-        "excerpt": "**Oracle database running slowly and dropping connections**"
+        "excerpt": "**Oracle database running slowly and dropping connections**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/problem/PRB0000032.md",
@@ -19572,7 +19814,8 @@
           "contract",
           "correlation_display"
         ],
-        "excerpt": "**Lawson DB seems to be running slowly**"
+        "excerpt": "**Lawson DB seems to be running slowly**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/problem/PRB0000050.md",
@@ -19653,7 +19896,8 @@
           "delivery_task",
           "due_date"
         ],
-        "excerpt": "**Switch occasionally drops connections**"
+        "excerpt": "**Switch occasionally drops connections**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/problem/PRB0000051.md",
@@ -19734,7 +19978,8 @@
           "contract",
           "correlation_display"
         ],
-        "excerpt": "**Exchange server outage**"
+        "excerpt": "**Exchange server outage**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/problem/PRB0000053.md",
@@ -19815,7 +20060,8 @@
           "delivery_plan",
           "delivery_task"
         ],
-        "excerpt": "- **Number**: PRB0000053"
+        "excerpt": "- **Number**: PRB0000053",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/problem/PRB0000055.md",
@@ -19896,7 +20142,8 @@
           "cmdb_ci",
           "comments"
         ],
-        "excerpt": "- **Number**: PRB0000055"
+        "excerpt": "- **Number**: PRB0000055",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/problem/PRB0000105.md",
@@ -19977,7 +20224,8 @@
           "first_reported_by_task",
           "fix_at"
         ],
-        "excerpt": "**Email system is down again**"
+        "excerpt": "**Email system is down again**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/problem/PRB0000106.md",
@@ -20058,7 +20306,8 @@
           "delivery_task",
           "due_date"
         ],
-        "excerpt": "**The Webex application is unavailable to all employees**"
+        "excerpt": "**The Webex application is unavailable to all employees**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/problem/PRB0000109.md",
@@ -20139,7 +20388,8 @@
           "system",
           "administrator"
         ],
-        "excerpt": "**USB port has stopped working**"
+        "excerpt": "**USB port has stopped working**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/problem/PRB0001000.md",
@@ -20220,7 +20470,8 @@
           "fix_communicated_at",
           "fix_communicated_by"
         ],
-        "excerpt": "**Unable to connect to the VPN**"
+        "excerpt": "**Unable to connect to the VPN**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/problem/PRB0001001.md",
@@ -20301,7 +20552,8 @@
           "expected_start",
           "first_reported_by_task"
         ],
-        "excerpt": "**Issue in connecting to internet using modem.**"
+        "excerpt": "**Issue in connecting to internet using modem.**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/problem/PRB0001002.md",
@@ -20382,7 +20634,8 @@
           "first_reported_by_task",
           "fix_at"
         ],
-        "excerpt": "**Unable to connect to Wifi**"
+        "excerpt": "**Unable to connect to Wifi**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/problem/PRB0007601.md",
@@ -20463,7 +20716,8 @@
           "first_reported_by_task",
           "fix_at"
         ],
-        "excerpt": "**Unable to send or receive emails.**"
+        "excerpt": "**Unable to send or receive emails.**",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       }
     ],
     "sc_req_item": [
@@ -20546,7 +20800,8 @@
           "location",
           "made_sla"
         ],
-        "excerpt": "SC_REQ_ITEM RITM0000001"
+        "excerpt": "SC_REQ_ITEM RITM0000001",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/sc_req_item/RITM0000002.md",
@@ -20627,7 +20882,8 @@
           "opened_at",
           "opened_by"
         ],
-        "excerpt": "SC_REQ_ITEM RITM0000002"
+        "excerpt": "SC_REQ_ITEM RITM0000002",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/sc_req_item/RITM0000003.md",
@@ -20708,7 +20964,8 @@
           "location",
           "made_sla"
         ],
-        "excerpt": "SC_REQ_ITEM RITM0000003"
+        "excerpt": "SC_REQ_ITEM RITM0000003",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/sc_req_item/RITM0000004.md",
@@ -20789,7 +21046,8 @@
           "location",
           "made_sla"
         ],
-        "excerpt": "SC_REQ_ITEM RITM0000004"
+        "excerpt": "SC_REQ_ITEM RITM0000004",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       },
       {
         "file": "knowledge/sc_req_item/RITM0000005.md",
@@ -20870,7 +21128,8 @@
           "knowledge",
           "location"
         ],
-        "excerpt": "SC_REQ_ITEM RITM0000005"
+        "excerpt": "SC_REQ_ITEM RITM0000005",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       }
     ],
     "sc_task": [
@@ -20953,7 +21212,8 @@
           "system",
           "administrator"
         ],
-        "excerpt": "**Order from vendor or move from in-stock inventory"
+        "excerpt": "**Order from vendor or move from in-stock inventory",
+        "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
       }
     ]
   },
@@ -20988,7 +21248,8 @@
         "total",
         "synced"
       ],
-      "excerpt": "ServiceNow Sync Summary"
+      "excerpt": "ServiceNow Sync Summary",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000001.md",
@@ -21069,7 +21330,8 @@
         "testing",
         "sunday"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000001"
+      "excerpt": "CHANGE_REQUEST CHG0000001",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000002.md",
@@ -21150,7 +21412,8 @@
         "change_plan",
         "chg_model"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000002"
+      "excerpt": "CHANGE_REQUEST CHG0000002",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000003.md",
@@ -21231,7 +21494,8 @@
         "close_code",
         "successful"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000003"
+      "excerpt": "CHANGE_REQUEST CHG0000003",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000004.md",
@@ -21312,7 +21576,8 @@
         "conflict_status",
         "contact_type"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000004"
+      "excerpt": "CHANGE_REQUEST CHG0000004",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000005.md",
@@ -21393,7 +21658,8 @@
         "system",
         "administrator"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000005"
+      "excerpt": "CHANGE_REQUEST CHG0000005",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000006.md",
@@ -21474,7 +21740,8 @@
         "calendar_duration",
         "change_plan"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000006"
+      "excerpt": "CHANGE_REQUEST CHG0000006",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000007.md",
@@ -21555,7 +21822,8 @@
         "kettering",
         "approve"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000007"
+      "excerpt": "CHANGE_REQUEST CHG0000007",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000008.md",
@@ -21636,7 +21904,8 @@
         "cab_recommendation",
         "cab_required"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000008"
+      "excerpt": "CHANGE_REQUEST CHG0000008",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000009.md",
@@ -21717,7 +21986,8 @@
         "approval",
         "approved"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000009"
+      "excerpt": "CHANGE_REQUEST CHG0000009",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000010.md",
@@ -21798,7 +22068,8 @@
         "conflict_last_run",
         "conflict_status"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000010"
+      "excerpt": "CHANGE_REQUEST CHG0000010",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000011.md",
@@ -21879,7 +22150,8 @@
         "company",
         "conflict_last_run"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000011"
+      "excerpt": "CHANGE_REQUEST CHG0000011",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000012.md",
@@ -21960,7 +22232,8 @@
         "conflict_last_run",
         "conflict_status"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000012"
+      "excerpt": "CHANGE_REQUEST CHG0000012",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000013.md",
@@ -22041,7 +22314,8 @@
         "conflict_last_run",
         "conflict_status"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000013"
+      "excerpt": "CHANGE_REQUEST CHG0000013",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000014.md",
@@ -22122,7 +22396,8 @@
         "conflict_last_run",
         "conflict_status"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000014"
+      "excerpt": "CHANGE_REQUEST CHG0000014",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000015.md",
@@ -22203,7 +22478,8 @@
         "contact_type",
         "phone"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000015"
+      "excerpt": "CHANGE_REQUEST CHG0000015",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000020.md",
@@ -22284,7 +22560,8 @@
         "file",
         "backout"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000020"
+      "excerpt": "CHANGE_REQUEST CHG0000020",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000021.md",
@@ -22365,7 +22642,8 @@
         "example",
         "save"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000021"
+      "excerpt": "CHANGE_REQUEST CHG0000021",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000022.md",
@@ -22446,7 +22724,8 @@
         "check",
         "previous"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000022"
+      "excerpt": "CHANGE_REQUEST CHG0000022",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000023.md",
@@ -22527,7 +22806,8 @@
         "before",
         "demoting"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000023"
+      "excerpt": "CHANGE_REQUEST CHG0000023",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000024.md",
@@ -22608,7 +22888,8 @@
         "maintenance",
         "mode"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000024"
+      "excerpt": "CHANGE_REQUEST CHG0000024",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000025.md",
@@ -22689,7 +22970,8 @@
         "mode",
         "monitoring"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000025"
+      "excerpt": "CHANGE_REQUEST CHG0000025",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000026.md",
@@ -22770,7 +23052,8 @@
         "monitoring",
         "platform"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000026"
+      "excerpt": "CHANGE_REQUEST CHG0000026",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000027.md",
@@ -22851,7 +23134,8 @@
         "monitoring",
         "servicenow"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000027"
+      "excerpt": "CHANGE_REQUEST CHG0000027",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000028.md",
@@ -22932,7 +23216,8 @@
         "unmount",
         "server4"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000028"
+      "excerpt": "CHANGE_REQUEST CHG0000028",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000030.md",
@@ -23013,7 +23298,8 @@
         "correlation_display",
         "correlation_id"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000030"
+      "excerpt": "CHANGE_REQUEST CHG0000030",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000031.md",
@@ -23094,7 +23380,8 @@
         "copied_from",
         "correlation_display"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000031"
+      "excerpt": "CHANGE_REQUEST CHG0000031",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000032.md",
@@ -23175,7 +23462,8 @@
         "contract",
         "copied_from"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000032"
+      "excerpt": "CHANGE_REQUEST CHG0000032",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000033.md",
@@ -23256,7 +23544,8 @@
         "contact_type",
         "phone"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000033"
+      "excerpt": "CHANGE_REQUEST CHG0000033",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000034.md",
@@ -23337,7 +23626,8 @@
         "phone",
         "contract"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000034"
+      "excerpt": "CHANGE_REQUEST CHG0000034",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000035.md",
@@ -23418,7 +23708,8 @@
         "conflict_status",
         "contact_type"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000035"
+      "excerpt": "CHANGE_REQUEST CHG0000035",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000036.md",
@@ -23499,7 +23790,8 @@
         "phone",
         "contract"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000036"
+      "excerpt": "CHANGE_REQUEST CHG0000036",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000037.md",
@@ -23580,7 +23872,8 @@
         "approval_history",
         "history"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000037"
+      "excerpt": "CHANGE_REQUEST CHG0000037",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000038.md",
@@ -23661,7 +23954,8 @@
         "additional_assignee_list",
         "approval"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000038"
+      "excerpt": "CHANGE_REQUEST CHG0000038",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000039.md",
@@ -23742,7 +24036,8 @@
         "active",
         "activity_due"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000039"
+      "excerpt": "CHANGE_REQUEST CHG0000039",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000040.md",
@@ -23823,7 +24118,8 @@
         "approval_history",
         "history"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000040"
+      "excerpt": "CHANGE_REQUEST CHG0000040",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000041.md",
@@ -23904,7 +24200,8 @@
         "approval_history",
         "history"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000041"
+      "excerpt": "CHANGE_REQUEST CHG0000041",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000042.md",
@@ -23985,7 +24282,8 @@
         "approval_history",
         "history"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000042"
+      "excerpt": "CHANGE_REQUEST CHG0000042",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000043.md",
@@ -24066,7 +24364,8 @@
         "approval_history",
         "history"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000043"
+      "excerpt": "CHANGE_REQUEST CHG0000043",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000044.md",
@@ -24147,7 +24446,8 @@
         "db_block_buffer",
         "active"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000044"
+      "excerpt": "CHANGE_REQUEST CHG0000044",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000045.md",
@@ -24228,7 +24528,8 @@
         "approve",
         "task"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000045"
+      "excerpt": "CHANGE_REQUEST CHG0000045",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000046.md",
@@ -24309,7 +24610,8 @@
         "approve",
         "task"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000046"
+      "excerpt": "CHANGE_REQUEST CHG0000046",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000047.md",
@@ -24390,7 +24692,8 @@
         "approval",
         "approval_history"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000047"
+      "excerpt": "CHANGE_REQUEST CHG0000047",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000048.md",
@@ -24471,7 +24774,8 @@
         "unknown",
         "additional_assignee_list"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000048"
+      "excerpt": "CHANGE_REQUEST CHG0000048",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000049.md",
@@ -24552,7 +24856,8 @@
         "active",
         "activity_due"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000049"
+      "excerpt": "CHANGE_REQUEST CHG0000049",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000050.md",
@@ -24633,7 +24938,8 @@
         "approval_history",
         "history"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000050"
+      "excerpt": "CHANGE_REQUEST CHG0000050",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000051.md",
@@ -24714,7 +25020,8 @@
         "approval_history",
         "history"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000051"
+      "excerpt": "CHANGE_REQUEST CHG0000051",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000052.md",
@@ -24795,7 +25102,8 @@
         "approval",
         "approval_history"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000052"
+      "excerpt": "CHANGE_REQUEST CHG0000052",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000053.md",
@@ -24876,7 +25184,8 @@
         "approval",
         "approval_history"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000053"
+      "excerpt": "CHANGE_REQUEST CHG0000053",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000054.md",
@@ -24957,7 +25266,8 @@
         "active",
         "activity_due"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000054"
+      "excerpt": "CHANGE_REQUEST CHG0000054",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000055.md",
@@ -25038,7 +25348,8 @@
         "approve",
         "task"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000055"
+      "excerpt": "CHANGE_REQUEST CHG0000055",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000056.md",
@@ -25119,7 +25430,8 @@
         "task",
         "bernard"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000056"
+      "excerpt": "CHANGE_REQUEST CHG0000056",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000057.md",
@@ -25200,7 +25512,8 @@
         "approval",
         "approval_history"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000057"
+      "excerpt": "CHANGE_REQUEST CHG0000057",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000058.md",
@@ -25281,7 +25594,8 @@
         "unknown",
         "additional_assignee_list"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000058"
+      "excerpt": "CHANGE_REQUEST CHG0000058",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000059.md",
@@ -25362,7 +25676,8 @@
         "active",
         "activity_due"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000059"
+      "excerpt": "CHANGE_REQUEST CHG0000059",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000060.md",
@@ -25443,7 +25758,8 @@
         "approval_history",
         "history"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000060"
+      "excerpt": "CHANGE_REQUEST CHG0000060",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000061.md",
@@ -25524,7 +25840,8 @@
         "additional_assignee_list",
         "approval"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000061"
+      "excerpt": "CHANGE_REQUEST CHG0000061",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000062.md",
@@ -25605,7 +25922,8 @@
         "approval",
         "approval_history"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000062"
+      "excerpt": "CHANGE_REQUEST CHG0000062",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000063.md",
@@ -25686,7 +26004,8 @@
         "additional_assignee_list",
         "approval"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000063"
+      "excerpt": "CHANGE_REQUEST CHG0000063",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000064.md",
@@ -25767,7 +26086,8 @@
         "db_block_buffer",
         "active"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000064"
+      "excerpt": "CHANGE_REQUEST CHG0000064",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000065.md",
@@ -25848,7 +26168,8 @@
         "task",
         "luke"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000065"
+      "excerpt": "CHANGE_REQUEST CHG0000065",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000066.md",
@@ -25929,7 +26250,8 @@
         "approve",
         "task"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000066"
+      "excerpt": "CHANGE_REQUEST CHG0000066",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000067.md",
@@ -26010,7 +26332,8 @@
         "approval",
         "approval_history"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000067"
+      "excerpt": "CHANGE_REQUEST CHG0000067",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000068.md",
@@ -26091,7 +26414,8 @@
         "unknown",
         "additional_assignee_list"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000068"
+      "excerpt": "CHANGE_REQUEST CHG0000068",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000069.md",
@@ -26172,7 +26496,8 @@
         "validate",
         "active"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000069"
+      "excerpt": "CHANGE_REQUEST CHG0000069",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000070.md",
@@ -26253,7 +26578,8 @@
         "approval_history",
         "history"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000070"
+      "excerpt": "CHANGE_REQUEST CHG0000070",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000071.md",
@@ -26334,7 +26660,8 @@
         "approval_history",
         "history"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000071"
+      "excerpt": "CHANGE_REQUEST CHG0000071",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000072.md",
@@ -26415,7 +26742,8 @@
         "additional_assignee_list",
         "approval"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000072"
+      "excerpt": "CHANGE_REQUEST CHG0000072",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000073.md",
@@ -26496,7 +26824,8 @@
         "approval_history",
         "history"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000073"
+      "excerpt": "CHANGE_REQUEST CHG0000073",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000074.md",
@@ -26577,7 +26906,8 @@
         "rollback",
         "db_block_buffer"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000074"
+      "excerpt": "CHANGE_REQUEST CHG0000074",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000075.md",
@@ -26658,7 +26988,8 @@
         "christen",
         "mitchell"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000075"
+      "excerpt": "CHANGE_REQUEST CHG0000075",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000076.md",
@@ -26739,7 +27070,8 @@
         "approve",
         "task"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000076"
+      "excerpt": "CHANGE_REQUEST CHG0000076",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000077.md",
@@ -26820,7 +27152,8 @@
         "approval",
         "approval_history"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000077"
+      "excerpt": "CHANGE_REQUEST CHG0000077",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000078.md",
@@ -26901,7 +27234,8 @@
         "unknown",
         "additional_assignee_list"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000078"
+      "excerpt": "CHANGE_REQUEST CHG0000078",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000079.md",
@@ -26982,7 +27316,8 @@
         "validate",
         "active"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000079"
+      "excerpt": "CHANGE_REQUEST CHG0000079",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000080.md",
@@ -27063,7 +27398,8 @@
         "approval_history",
         "history"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000080"
+      "excerpt": "CHANGE_REQUEST CHG0000080",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000081.md",
@@ -27144,7 +27480,8 @@
         "approval",
         "approval_history"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000081"
+      "excerpt": "CHANGE_REQUEST CHG0000081",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000082.md",
@@ -27225,7 +27562,8 @@
         "approval_history",
         "history"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000082"
+      "excerpt": "CHANGE_REQUEST CHG0000082",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000083.md",
@@ -27306,7 +27644,8 @@
         "approval",
         "approval_history"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000083"
+      "excerpt": "CHANGE_REQUEST CHG0000083",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000084.md",
@@ -27387,7 +27726,8 @@
         "db_block_buffer",
         "active"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000084"
+      "excerpt": "CHANGE_REQUEST CHG0000084",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000085.md",
@@ -27468,7 +27808,8 @@
         "approve",
         "task"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000085"
+      "excerpt": "CHANGE_REQUEST CHG0000085",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000086.md",
@@ -27549,7 +27890,8 @@
         "technical",
         "approvals"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000086"
+      "excerpt": "CHANGE_REQUEST CHG0000086",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000087.md",
@@ -27630,7 +27972,8 @@
         "approval",
         "approval_history"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000087"
+      "excerpt": "CHANGE_REQUEST CHG0000087",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000088.md",
@@ -27711,7 +28054,8 @@
         "unknown",
         "additional_assignee_list"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000088"
+      "excerpt": "CHANGE_REQUEST CHG0000088",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000089.md",
@@ -27792,7 +28136,8 @@
         "validate",
         "active"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000089"
+      "excerpt": "CHANGE_REQUEST CHG0000089",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000090.md",
@@ -27873,7 +28218,8 @@
         "approval_history",
         "history"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000090"
+      "excerpt": "CHANGE_REQUEST CHG0000090",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000091.md",
@@ -27954,7 +28300,8 @@
         "approval",
         "approval_history"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000091"
+      "excerpt": "CHANGE_REQUEST CHG0000091",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000092.md",
@@ -28035,7 +28382,8 @@
         "additional_assignee_list",
         "approval"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000092"
+      "excerpt": "CHANGE_REQUEST CHG0000092",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000093.md",
@@ -28116,7 +28464,8 @@
         "additional_assignee_list",
         "approval"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000093"
+      "excerpt": "CHANGE_REQUEST CHG0000093",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000094.md",
@@ -28197,7 +28546,8 @@
         "active",
         "activity_due"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000094"
+      "excerpt": "CHANGE_REQUEST CHG0000094",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000095.md",
@@ -28278,7 +28628,8 @@
         "mitchell",
         "approve"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000095"
+      "excerpt": "CHANGE_REQUEST CHG0000095",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0000096.md",
@@ -28359,7 +28710,8 @@
         "wilson",
         "approve"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0000096"
+      "excerpt": "CHANGE_REQUEST CHG0000096",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0002000.md",
@@ -28440,7 +28792,8 @@
         "copied_from",
         "correlation_display"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0002000"
+      "excerpt": "CHANGE_REQUEST CHG0002000",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0002001.md",
@@ -28521,7 +28874,8 @@
         "copied_from",
         "correlation_display"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0002001"
+      "excerpt": "CHANGE_REQUEST CHG0002001",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0030004.md",
@@ -28602,7 +28956,8 @@
         "necessary",
         "finalize"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0030004"
+      "excerpt": "CHANGE_REQUEST CHG0030004",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0030005.md",
@@ -28683,7 +29038,8 @@
         "necessary",
         "finalize"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0030005"
+      "excerpt": "CHANGE_REQUEST CHG0030005",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0030006.md",
@@ -28764,7 +29120,8 @@
         "justification",
         "necessary"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0030006"
+      "excerpt": "CHANGE_REQUEST CHG0030006",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0030007.md",
@@ -28845,7 +29202,8 @@
         "stability",
         "compliance"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0030007"
+      "excerpt": "CHANGE_REQUEST CHG0030007",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0030008.md",
@@ -28926,7 +29284,8 @@
         "memory",
         "leaks"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0030008"
+      "excerpt": "CHANGE_REQUEST CHG0030008",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0040001.md",
@@ -29007,7 +29366,8 @@
         "cabling",
         "test"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0040001"
+      "excerpt": "CHANGE_REQUEST CHG0040001",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0040002.md",
@@ -29088,7 +29448,8 @@
         "associated",
         "cabling"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0040002"
+      "excerpt": "CHANGE_REQUEST CHG0040002",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0040003.md",
@@ -29169,7 +29530,8 @@
         "conflict_last_run",
         "conflict_status"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0040003"
+      "excerpt": "CHANGE_REQUEST CHG0040003",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0040004.md",
@@ -29250,7 +29612,8 @@
         "conflict_last_run",
         "conflict_status"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0040004"
+      "excerpt": "CHANGE_REQUEST CHG0040004",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0040005.md",
@@ -29331,7 +29694,8 @@
         "cmdb",
         "backout"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0040005"
+      "excerpt": "CHANGE_REQUEST CHG0040005",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0040006.md",
@@ -29412,7 +29776,8 @@
         "servicenow",
         "cmdb"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0040006"
+      "excerpt": "CHANGE_REQUEST CHG0040006",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/change_request/CHG0040007.md",
@@ -29493,7 +29858,8 @@
         "company",
         "conflict_last_run"
       ],
-      "excerpt": "CHANGE_REQUEST CHG0040007"
+      "excerpt": "CHANGE_REQUEST CHG0040007",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000001.md",
@@ -29574,7 +29940,8 @@
         "business_service",
         "business_stc"
       ],
-      "excerpt": "- **Number**: INC0000001"
+      "excerpt": "- **Number**: INC0000001",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000002.md",
@@ -29655,7 +30022,8 @@
         "comments",
         "system"
       ],
-      "excerpt": "**Network file shares access issue**"
+      "excerpt": "**Network file shares access issue**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000003.md",
@@ -29736,7 +30104,8 @@
         "cmdb_ci",
         "comments"
       ],
-      "excerpt": "**Wireless access is down in my area**"
+      "excerpt": "**Wireless access is down in my area**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000004.md",
@@ -29817,7 +30186,8 @@
         "calendar_stc",
         "caller_id"
       ],
-      "excerpt": "**Forgot email password**"
+      "excerpt": "**Forgot email password**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000005.md",
@@ -29898,7 +30268,8 @@
         "cause",
         "child_incidents"
       ],
-      "excerpt": "**CPU load high for over 10 minutes**"
+      "excerpt": "**CPU load high for over 10 minutes**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000006.md",
@@ -29979,7 +30350,8 @@
         "business_stc",
         "calendar_duration"
       ],
-      "excerpt": "**Hangs when trying to print VISIO document**"
+      "excerpt": "**Hangs when trying to print VISIO document**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000007.md",
@@ -30060,7 +30432,8 @@
         "glide",
         "maint"
       ],
-      "excerpt": "**Need access to sales DB for the West**"
+      "excerpt": "**Need access to sales DB for the West**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000008.md",
@@ -30141,7 +30514,8 @@
         "child_incidents",
         "close_code"
       ],
-      "excerpt": "**Printer in my office is out of toner**"
+      "excerpt": "**Printer in my office is out of toner**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000009.md",
@@ -30222,7 +30596,8 @@
         "business_duration",
         "days"
       ],
-      "excerpt": "**Reset my password**"
+      "excerpt": "**Reset my password**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000010.md",
@@ -30303,7 +30678,8 @@
         "close_code",
         "close_notes"
       ],
-      "excerpt": "**Need Oracle 10GR2 installed**"
+      "excerpt": "**Need Oracle 10GR2 installed**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000011.md",
@@ -30384,7 +30760,8 @@
         "hours",
         "minutes"
       ],
-      "excerpt": "**Need new Blackberry set up**"
+      "excerpt": "**Need new Blackberry set up**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000012.md",
@@ -30465,7 +30842,8 @@
         "business_duration",
         "days"
       ],
-      "excerpt": "**Customer didn't receive eFax**"
+      "excerpt": "**Customer didn't receive eFax**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000013.md",
@@ -30546,7 +30924,8 @@
         "minutes",
         "business_impact"
       ],
-      "excerpt": "**EMAIL is slow when an attachment is involved**"
+      "excerpt": "**EMAIL is slow when an attachment is involved**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000014.md",
@@ -30627,7 +31006,8 @@
         "caller_id",
         "f298d2d2c611227b0106c6be7f154bc8"
       ],
-      "excerpt": "**Missing my home directory**"
+      "excerpt": "**Missing my home directory**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000015.md",
@@ -30708,7 +31088,8 @@
         "calendar_duration",
         "calendar_stc"
       ],
-      "excerpt": "**I can't launch my VPN client since the last software update**"
+      "excerpt": "**I can't launch my VPN client since the last software update**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000016.md",
@@ -30789,7 +31170,8 @@
         "caller_id",
         "f298d2d2c611227b0106c6be7f154bc8"
       ],
-      "excerpt": "**Rain is leaking on main DNS Server**"
+      "excerpt": "**Rain is leaking on main DNS Server**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000017.md",
@@ -30870,7 +31252,8 @@
         "caller_id",
         "cause"
       ],
-      "excerpt": "**How do I create a sub-folder**"
+      "excerpt": "**How do I create a sub-folder**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000018.md",
@@ -30951,7 +31334,8 @@
         "minute",
         "calendar_stc"
       ],
-      "excerpt": "**Sales forecast spreadsheet is READ ONLY**"
+      "excerpt": "**Sales forecast spreadsheet is READ ONLY**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000019.md",
@@ -31032,7 +31416,8 @@
         "closed_by",
         "cmdb_ci"
       ],
-      "excerpt": "**Can't launch 64-bit Windows 7 virtual machine**"
+      "excerpt": "**Can't launch 64-bit Windows 7 virtual machine**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000020.md",
@@ -31113,7 +31498,8 @@
         "caller_id",
         "cause"
       ],
-      "excerpt": "**I need a replacement iPhone, please**"
+      "excerpt": "**I need a replacement iPhone, please**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000021.md",
@@ -31194,7 +31580,8 @@
         "business_service",
         "business_stc"
       ],
-      "excerpt": "**New employee hire**"
+      "excerpt": "**New employee hire**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000024.md",
@@ -31275,7 +31662,8 @@
         "days",
         "hours"
       ],
-      "excerpt": "**Issue with a web page on wiki**"
+      "excerpt": "**Issue with a web page on wiki**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000025.md",
@@ -31356,7 +31744,8 @@
         "child_incidents",
         "close_code"
       ],
-      "excerpt": "**Need to add more memory to laptop**"
+      "excerpt": "**Need to add more memory to laptop**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000026.md",
@@ -31437,7 +31826,8 @@
         "caller_id",
         "cause"
       ],
-      "excerpt": "**Seem to have an issue with my hard drive...**"
+      "excerpt": "**Seem to have an issue with my hard drive...**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000027.md",
@@ -31518,7 +31908,8 @@
         "caller_id",
         "cause"
       ],
-      "excerpt": "**Please remove the latest hotfix from my PC**"
+      "excerpt": "**Please remove the latest hotfix from my PC**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000028.md",
@@ -31599,7 +31990,8 @@
         "business_duration",
         "days"
       ],
-      "excerpt": "**My disk is still having issues. Can't delete a file**"
+      "excerpt": "**My disk is still having issues. Can't delete a file**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000029.md",
@@ -31680,7 +32072,8 @@
         "cmdb_ci",
         "comments"
       ],
-      "excerpt": "**I can't get my weather report**"
+      "excerpt": "**I can't get my weather report**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000030.md",
@@ -31761,7 +32154,8 @@
         "calendar_duration",
         "calendar_stc"
       ],
-      "excerpt": "**Lost connection to the wireless network**"
+      "excerpt": "**Lost connection to the wireless network**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000031.md",
@@ -31842,7 +32236,8 @@
         "cmdb_ci",
         "comments"
       ],
-      "excerpt": "**Need help with Remedy. Can we configure UI?**"
+      "excerpt": "**Need help with Remedy. Can we configure UI?**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000032.md",
@@ -31923,7 +32318,8 @@
         "business_stc",
         "calendar_duration"
       ],
-      "excerpt": "**EMAIL Server Down Again**"
+      "excerpt": "**EMAIL Server Down Again**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000033.md",
@@ -32004,7 +32400,8 @@
         "caller_id",
         "cause"
       ],
-      "excerpt": "**File Server is 80% full - Needs upgrade**"
+      "excerpt": "**File Server is 80% full - Needs upgrade**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000034.md",
@@ -32085,7 +32482,8 @@
         "calendar_stc",
         "caller_id"
       ],
-      "excerpt": "**Does not look like a backup occurred last night**"
+      "excerpt": "**Does not look like a backup occurred last night**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000035.md",
@@ -32166,7 +32564,8 @@
         "business_service",
         "business_stc"
       ],
-      "excerpt": "**Reset my password**"
+      "excerpt": "**Reset my password**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000036.md",
@@ -32247,7 +32646,8 @@
         "minutes",
         "business_impact"
       ],
-      "excerpt": "**Issue with networking**"
+      "excerpt": "**Issue with networking**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000037.md",
@@ -32328,7 +32728,8 @@
         "close_notes",
         "closed_at"
       ],
-      "excerpt": "**Request for a new service**"
+      "excerpt": "**Request for a new service**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000038.md",
@@ -32409,7 +32810,8 @@
         "assignment_group",
         "d625dccec0a8016700a222a0f7900d06"
       ],
-      "excerpt": "**my PDF docs are all locked from editing**"
+      "excerpt": "**my PDF docs are all locked from editing**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000039.md",
@@ -32490,7 +32892,8 @@
         "routing",
         "diego"
       ],
-      "excerpt": "**Trouble getting to Oregon mail server**"
+      "excerpt": "**Trouble getting to Oregon mail server**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000040.md",
@@ -32571,7 +32974,8 @@
         "closed_at",
         "closed_by"
       ],
-      "excerpt": "**JavaScript error on hiring page of corporate website**"
+      "excerpt": "**JavaScript error on hiring page of corporate website**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000041.md",
@@ -32652,7 +33056,8 @@
         "comments",
         "additional"
       ],
-      "excerpt": "**My desk phone does not work**"
+      "excerpt": "**My desk phone does not work**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000044.md",
@@ -32733,7 +33138,8 @@
         "north",
         "america"
       ],
-      "excerpt": "**Can't log into SAP from my laptop today**"
+      "excerpt": "**Can't log into SAP from my laptop today**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000046.md",
@@ -32814,7 +33220,8 @@
         "system",
         "administrator"
       ],
-      "excerpt": "**Can't access SFA software**"
+      "excerpt": "**Can't access SFA software**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000047.md",
@@ -32895,7 +33302,8 @@
         "a9a2d111c611227601fb37542399caa8",
         "comments"
       ],
-      "excerpt": "- **Number**: INC0000047"
+      "excerpt": "- **Number**: INC0000047",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000048.md",
@@ -32976,7 +33384,8 @@
         "cmdb_ci",
         "a9c0c8d2c6112276018f7705562f9cb0"
       ],
-      "excerpt": "**Having problems with Sales Tools performance**"
+      "excerpt": "**Having problems with Sales Tools performance**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000049.md",
@@ -33057,7 +33466,8 @@
         "closed_by",
         "cmdb_ci"
       ],
-      "excerpt": "**Network storage unavailable**"
+      "excerpt": "**Network storage unavailable**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000050.md",
@@ -33138,7 +33548,8 @@
         "child_incidents",
         "close_code"
       ],
-      "excerpt": "**Can't access Exchange server - is it down?**"
+      "excerpt": "**Can't access Exchange server - is it down?**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000051.md",
@@ -33219,7 +33630,8 @@
         "close_code",
         "close_notes"
       ],
-      "excerpt": "**Manager can't access SAP Controlling application**"
+      "excerpt": "**Manager can't access SAP Controlling application**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000052.md",
@@ -33300,7 +33712,8 @@
         "closed_at",
         "closed_by"
       ],
-      "excerpt": "**SAP Financial Accounting application appears to be down**"
+      "excerpt": "**SAP Financial Accounting application appears to be down**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000053.md",
@@ -33381,7 +33794,8 @@
         "caller_id",
         "cause"
       ],
-      "excerpt": "**The SAP HR application is not accessible**"
+      "excerpt": "**The SAP HR application is not accessible**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000054.md",
@@ -33462,7 +33876,8 @@
         "closed_by",
         "cmdb_ci"
       ],
-      "excerpt": "**SAP Materials Management is slow or there is an outage**"
+      "excerpt": "**SAP Materials Management is slow or there is an outage**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000055.md",
@@ -33543,7 +33958,8 @@
         "closed_by",
         "cmdb_ci"
       ],
-      "excerpt": "**SAP Sales app is not accessible**"
+      "excerpt": "**SAP Sales app is not accessible**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000057.md",
@@ -33624,7 +34040,8 @@
         "comments_and_work_notes",
         "company"
       ],
-      "excerpt": "**Performance problems with wifi**"
+      "excerpt": "**Performance problems with wifi**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000058.md",
@@ -33705,7 +34122,8 @@
         "child_incidents",
         "close_code"
       ],
-      "excerpt": "**Performance problems with email**"
+      "excerpt": "**Performance problems with email**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000059.md",
@@ -33786,7 +34204,8 @@
         "contact_type",
         "self-service"
       ],
-      "excerpt": "**Unable to access team file share**"
+      "excerpt": "**Unable to access team file share**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000060.md",
@@ -33867,7 +34286,8 @@
         "close_code",
         "solved"
       ],
-      "excerpt": "**Unable to connect to email**"
+      "excerpt": "**Unable to connect to email**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0000601.md",
@@ -33948,7 +34368,8 @@
         "closed_at",
         "closed_by"
       ],
-      "excerpt": "**The USB port on my PC stopped working**"
+      "excerpt": "**The USB port on my PC stopped working**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0001990.md",
@@ -34029,7 +34450,8 @@
         "correlation_display",
         "correlation_id"
       ],
-      "excerpt": "**Unable to access the personal details section in payroll portal**"
+      "excerpt": "**Unable to access the personal details section in payroll portal**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0007001.md",
@@ -34110,7 +34532,8 @@
         "comments_and_work_notes",
         "work"
       ],
-      "excerpt": "**Employee payroll application server is down.**"
+      "excerpt": "**Employee payroll application server is down.**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0007002.md",
@@ -34191,7 +34614,8 @@
         "work",
         "notes"
       ],
-      "excerpt": "**Need access to the common drive.**"
+      "excerpt": "**Need access to the common drive.**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0008001.md",
@@ -34272,7 +34696,8 @@
         "expected_start",
         "follow_up"
       ],
-      "excerpt": "- **Number**: INC0008001"
+      "excerpt": "- **Number**: INC0008001",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0008111.md",
@@ -34353,7 +34778,8 @@
         "follow_up",
         "group_list"
       ],
-      "excerpt": "- **Number**: INC0008111"
+      "excerpt": "- **Number**: INC0008111",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0008112.md",
@@ -34434,7 +34860,8 @@
         "normal",
         "expected_start"
       ],
-      "excerpt": "**Assessment :  ATF Assessor**"
+      "excerpt": "**Assessment :  ATF Assessor**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0009001.md",
@@ -34515,7 +34942,8 @@
         "changed",
         "company"
       ],
-      "excerpt": "**Unable to post content on a Wiki page**"
+      "excerpt": "**Unable to post content on a Wiki page**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0009002.md",
@@ -34596,7 +35024,8 @@
         "permanently",
         "close_notes"
       ],
-      "excerpt": "**My computer is not detecting the headphone device**"
+      "excerpt": "**My computer is not detecting the headphone device**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0009003.md",
@@ -34677,7 +35106,8 @@
         "solved",
         "work"
       ],
-      "excerpt": "**Cannot sign into the company portal app**"
+      "excerpt": "**Cannot sign into the company portal app**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0009004.md",
@@ -34758,7 +35188,8 @@
         "cause",
         "child_incidents"
       ],
-      "excerpt": "**Defect tracking tool is down.**"
+      "excerpt": "**Defect tracking tool is down.**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0009005.md",
@@ -34839,7 +35270,8 @@
         "criticality",
         "company"
       ],
-      "excerpt": "**Email server is down.**"
+      "excerpt": "**Email server is down.**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0009009.md",
@@ -34920,7 +35352,8 @@
         "contract",
         "correlation_display"
       ],
-      "excerpt": "**Unable to access the shared folder.**"
+      "excerpt": "**Unable to access the shared folder.**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0010001.md",
@@ -35001,7 +35434,8 @@
         "company",
         "contact_type"
       ],
-      "excerpt": "**how to create Redhat Logical volume **"
+      "excerpt": "**how to create Redhat Logical volume **",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0010002.md",
@@ -35082,7 +35516,8 @@
         "nvidia",
         "driver"
       ],
-      "excerpt": "**RHEL 9 system fails to boot after kernel update**"
+      "excerpt": "**RHEL 9 system fails to boot after kernel update**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0010003.md",
@@ -35163,7 +35598,8 @@
         "partition",
         "accumulated"
       ],
-      "excerpt": "**Jenkins pipeline failing with 'No space left on device' error**"
+      "excerpt": "**Jenkins pipeline failing with 'No space left on device' error**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0010004.md",
@@ -35244,7 +35680,8 @@
         "replica",
         "causing"
       ],
-      "excerpt": "**OpenShift pods stuck in CrashLoopBackOff after namespace resource quota exceeded**"
+      "excerpt": "**OpenShift pods stuck in CrashLoopBackOff after namespace resource quota exceeded**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0010005.md",
@@ -35325,7 +35762,8 @@
         "rotated",
         "secrets"
       ],
-      "excerpt": "**Ansible Tower job template failing with SSH authentication error on RHEL hosts**"
+      "excerpt": "**Ansible Tower job template failing with SSH authentication error on RHEL hosts**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0010006.md",
@@ -35406,7 +35844,8 @@
         "applied",
         "rhel"
       ],
-      "excerpt": "**GitLab CI/CD runners unresponsive \u2014 all pipelines queued**"
+      "excerpt": "**GitLab CI/CD runners unresponsive \u2014 all pipelines queued**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0010007.md",
@@ -35487,7 +35926,8 @@
         "trust",
         "store"
       ],
-      "excerpt": "**Podman containers on RHEL 8 unable to pull images from private registry**"
+      "excerpt": "**Podman containers on RHEL 8 unable to pull images from private registry**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0010008.md",
@@ -35568,7 +36008,8 @@
         "subnet",
         "process"
       ],
-      "excerpt": "**Terraform state file lock not releasing after failed apply in Azure**"
+      "excerpt": "**Terraform state file lock not releasing after failed apply in Azure**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0010009.md",
@@ -35649,7 +36090,8 @@
         "corrupted",
         "incomplete"
       ],
-      "excerpt": "**Red Hat Satellite 6 content sync failing \u2014 repository metadata error**"
+      "excerpt": "**Red Hat Satellite 6 content sync failing \u2014 repository metadata error**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0010010.md",
@@ -35730,7 +36172,8 @@
         "create",
         "patch"
       ],
-      "excerpt": "**ArgoCD application out of sync after Kubernetes RBAC policy change**"
+      "excerpt": "**ArgoCD application out of sync after Kubernetes RBAC policy change**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/incident/INC0010011.md",
@@ -35811,7 +36254,8 @@
         "cause",
         "analysis"
       ],
-      "excerpt": "**Prometheus alertmanager not sending alerts \u2014 SMTP relay misconfiguration**"
+      "excerpt": "**Prometheus alertmanager not sending alerts \u2014 SMTP relay misconfiguration**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0000001.md",
@@ -35892,7 +36336,8 @@
         "zoho",
         "services"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0000001"
+      "excerpt": "KB_KNOWLEDGE KB0000001",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0000002.md",
@@ -35973,7 +36418,8 @@
         "pressing",
         "ctrl"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0000002"
+      "excerpt": "KB_KNOWLEDGE KB0000002",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0000003.md",
@@ -36054,7 +36500,8 @@
         "wide-rounded",
         "solid"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0000003"
+      "excerpt": "KB_KNOWLEDGE KB0000003",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0000004.md",
@@ -36135,7 +36582,8 @@
         "sys_id",
         "sys_mod_count"
       ],
-      "excerpt": "KB_KNOWLEDGE \u2014 KB0000004"
+      "excerpt": "KB_KNOWLEDGE \u2014 KB0000004",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0000005.md",
@@ -36216,7 +36664,8 @@
         "after",
         "enter"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0000005"
+      "excerpt": "KB_KNOWLEDGE KB0000005",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0000006.md",
@@ -36297,7 +36746,8 @@
         "collegiate",
         "dictionary"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0000006"
+      "excerpt": "KB_KNOWLEDGE KB0000006",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0000007.md",
@@ -36378,7 +36828,8 @@
         "upon",
         "return"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0000007"
+      "excerpt": "KB_KNOWLEDGE KB0000007",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0000008.md",
@@ -36459,7 +36910,8 @@
         "bottom",
         "left"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0000008"
+      "excerpt": "KB_KNOWLEDGE KB0000008",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0000009.md",
@@ -36540,7 +36992,8 @@
         "holder",
         "given"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0000009"
+      "excerpt": "KB_KNOWLEDGE KB0000009",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0000010.md",
@@ -36621,7 +37074,8 @@
         "replaceable",
         "units"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0000010"
+      "excerpt": "KB_KNOWLEDGE KB0000010",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0000011.md",
@@ -36702,7 +37156,8 @@
         "consider",
         "following"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0000011"
+      "excerpt": "KB_KNOWLEDGE KB0000011",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0000012.md",
@@ -36783,7 +37238,8 @@
         "html",
         "text"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0000012"
+      "excerpt": "KB_KNOWLEDGE KB0000012",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0000013.md",
@@ -36864,7 +37320,8 @@
         "finder",
         "option"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0000013"
+      "excerpt": "KB_KNOWLEDGE KB0000013",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0000014.md",
@@ -36945,7 +37402,8 @@
         "base_version",
         "can_read_user_criteria"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0000014"
+      "excerpt": "KB_KNOWLEDGE KB0000014",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0000015.md",
@@ -37026,7 +37484,8 @@
         "beyond",
         "basic"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0000015"
+      "excerpt": "KB_KNOWLEDGE KB0000015",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0000016.md",
@@ -37107,7 +37566,8 @@
         "meeting",
         "send"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0000016"
+      "excerpt": "KB_KNOWLEDGE KB0000016",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0000017.md",
@@ -37188,7 +37648,8 @@
         "wiki",
         "windows_key"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0000017"
+      "excerpt": "KB_KNOWLEDGE KB0000017",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0000018.md",
@@ -37269,7 +37730,8 @@
         "limitations",
         "functionality"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0000018"
+      "excerpt": "KB_KNOWLEDGE KB0000018",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0000019.md",
@@ -37350,7 +37812,8 @@
         "points",
         "finish"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0000019"
+      "excerpt": "KB_KNOWLEDGE KB0000019",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0000020.md",
@@ -37431,7 +37894,8 @@
         "calendar",
         "mail"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0000020"
+      "excerpt": "KB_KNOWLEDGE KB0000020",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0000021.md",
@@ -37512,7 +37976,8 @@
         "core",
         "memory"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0000021"
+      "excerpt": "KB_KNOWLEDGE KB0000021",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0000022.md",
@@ -37593,7 +38058,8 @@
         "vista",
         "start"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0000022"
+      "excerpt": "KB_KNOWLEDGE KB0000022",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0000023.md",
@@ -37674,7 +38140,8 @@
         "sys_created_on",
         "sys_domain"
       ],
-      "excerpt": "KB_KNOWLEDGE \u2014 KB0000023"
+      "excerpt": "KB_KNOWLEDGE \u2014 KB0000023",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0000024.md",
@@ -37755,7 +38222,8 @@
         "file",
         "formats"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0000024"
+      "excerpt": "KB_KNOWLEDGE KB0000024",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0000025.md",
@@ -37836,7 +38304,8 @@
         "exist",
         "folder"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0000025"
+      "excerpt": "KB_KNOWLEDGE KB0000025",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0000026.md",
@@ -37917,7 +38386,8 @@
         "e-mail",
         "adding"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0000026"
+      "excerpt": "KB_KNOWLEDGE KB0000026",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0000027.md",
@@ -37998,7 +38468,8 @@
         "disable_commenting",
         "disable_suggesting"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0000027"
+      "excerpt": "KB_KNOWLEDGE KB0000027",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0000028.md",
@@ -38079,7 +38550,8 @@
         "asking",
         "click"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0000028"
+      "excerpt": "KB_KNOWLEDGE KB0000028",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0000029.md",
@@ -38160,7 +38632,8 @@
         "advertise",
         "commonly"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0000029"
+      "excerpt": "KB_KNOWLEDGE KB0000029",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0000030.md",
@@ -38241,7 +38714,8 @@
         "either",
         "icon"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0000030"
+      "excerpt": "KB_KNOWLEDGE KB0000030",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0000031.md",
@@ -38322,7 +38796,8 @@
         "numbers",
         "next"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0000031"
+      "excerpt": "KB_KNOWLEDGE KB0000031",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0000032.md",
@@ -38403,7 +38878,8 @@
         "move",
         "pointer"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0000032"
+      "excerpt": "KB_KNOWLEDGE KB0000032",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0000033.md",
@@ -38484,7 +38960,8 @@
         "latest",
         "updates"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0000033"
+      "excerpt": "KB_KNOWLEDGE KB0000033",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0000051.md",
@@ -38565,7 +39042,8 @@
         "sys_domain",
         "global"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0000051"
+      "excerpt": "KB_KNOWLEDGE KB0000051",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0000052.md",
@@ -38646,7 +39124,8 @@
         "a074401f53dc23004247ddeeff7b122a",
         "sys_class_name"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0000052"
+      "excerpt": "KB_KNOWLEDGE KB0000052",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0000053.md",
@@ -38727,7 +39206,8 @@
         "admin",
         "sys_created_on"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0000053"
+      "excerpt": "KB_KNOWLEDGE KB0000053",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0005001.md",
@@ -38808,7 +39288,8 @@
         "version",
         "primary"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0005001"
+      "excerpt": "KB_KNOWLEDGE KB0005001",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0005010.md",
@@ -38889,7 +39370,8 @@
         "disk",
         "drive"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0005010"
+      "excerpt": "KB_KNOWLEDGE KB0005010",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0005012.md",
@@ -38970,7 +39452,8 @@
         "direct",
         "disable_commenting"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0005012"
+      "excerpt": "KB_KNOWLEDGE KB0005012",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0005014.md",
@@ -39051,7 +39534,8 @@
         "sys_id",
         "sys_mod_count"
       ],
-      "excerpt": "KB_KNOWLEDGE \u2014 KB0005014"
+      "excerpt": "KB_KNOWLEDGE \u2014 KB0005014",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0010002.md",
@@ -39132,7 +39616,8 @@
         "sys_created_by",
         "admin"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0010002"
+      "excerpt": "KB_KNOWLEDGE KB0010002",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0010004.md",
@@ -39213,7 +39698,8 @@
         "admin",
         "sys_created_on"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0010004"
+      "excerpt": "KB_KNOWLEDGE KB0010004",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0010038.md",
@@ -39294,7 +39780,8 @@
         "sys_class_name",
         "kb_template_how_to"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0010038"
+      "excerpt": "KB_KNOWLEDGE KB0010038",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB0010039.md",
@@ -39375,7 +39862,8 @@
         "sys_class_name",
         "kb_template_how_to"
       ],
-      "excerpt": "KB_KNOWLEDGE KB0010039"
+      "excerpt": "KB_KNOWLEDGE KB0010039",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/kb_knowledge/KB99999999.md",
@@ -39456,7 +39944,8 @@
         "sends",
         "messages"
       ],
-      "excerpt": "KB_KNOWLEDGE KB99999999"
+      "excerpt": "KB_KNOWLEDGE KB99999999",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/problem/PRB0000001.md",
@@ -39537,7 +40026,8 @@
         "due_date",
         "duplicate_of"
       ],
-      "excerpt": "**Windows XP SP2 causing errors in Enterprise**"
+      "excerpt": "**Windows XP SP2 causing errors in Enterprise**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/problem/PRB0000002.md",
@@ -39618,7 +40108,8 @@
         "contact_type",
         "contract"
       ],
-      "excerpt": "**2nd Floor File Server Short on Space"
+      "excerpt": "**2nd Floor File Server Short on Space",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/problem/PRB0000003.md",
@@ -39699,7 +40190,8 @@
         "first_reported_by_task",
         "inc0000020"
       ],
-      "excerpt": "**Request for a Blackberry**"
+      "excerpt": "**Request for a Blackberry**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/problem/PRB0000004.md",
@@ -39780,7 +40272,8 @@
         "normal",
         "expected_start"
       ],
-      "excerpt": "**Boot with shift key held down**"
+      "excerpt": "**Boot with shift key held down**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/problem/PRB0000006.md",
@@ -39861,7 +40354,8 @@
         "comments",
         "comments_and_work_notes"
       ],
-      "excerpt": "**Can't access SFA software**"
+      "excerpt": "**Can't access SFA software**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/problem/PRB0000007.md",
@@ -39942,7 +40436,8 @@
         "expected_start",
         "first_reported_by_task"
       ],
-      "excerpt": "- **Number**: PRB0000007"
+      "excerpt": "- **Number**: PRB0000007",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/problem/PRB0000008.md",
@@ -40023,7 +40518,8 @@
         "fix_at",
         "fix_by"
       ],
-      "excerpt": "**Hang when trying to print VISIO document**"
+      "excerpt": "**Hang when trying to print VISIO document**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/problem/PRB0000010.md",
@@ -40104,7 +40600,8 @@
         "fix_by",
         "fix_communicated_at"
       ],
-      "excerpt": "- **Number**: PRB0000010"
+      "excerpt": "- **Number**: PRB0000010",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/problem/PRB0000011.md",
@@ -40185,7 +40682,8 @@
         "comments",
         "comments_and_work_notes"
       ],
-      "excerpt": "**Unknown source of SAP outage**"
+      "excerpt": "**Unknown source of SAP outage**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/problem/PRB0000012.md",
@@ -40266,7 +40764,8 @@
         "correlation_display",
         "correlation_id"
       ],
-      "excerpt": "**Cannot disable wireless when plug into an Ethernet port**"
+      "excerpt": "**Cannot disable wireless when plug into an Ethernet port**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/problem/PRB0000014.md",
@@ -40347,7 +40846,8 @@
         "contact_type",
         "contract"
       ],
-      "excerpt": "**My laptop is performing very badly**"
+      "excerpt": "**My laptop is performing very badly**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/problem/PRB0000029.md",
@@ -40428,7 +40928,8 @@
         "contract",
         "correlation_display"
       ],
-      "excerpt": "**Oracle database running slowly and dropping connections**"
+      "excerpt": "**Oracle database running slowly and dropping connections**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/problem/PRB0000032.md",
@@ -40509,7 +41010,8 @@
         "contract",
         "correlation_display"
       ],
-      "excerpt": "**Lawson DB seems to be running slowly**"
+      "excerpt": "**Lawson DB seems to be running slowly**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/problem/PRB0000050.md",
@@ -40590,7 +41092,8 @@
         "delivery_task",
         "due_date"
       ],
-      "excerpt": "**Switch occasionally drops connections**"
+      "excerpt": "**Switch occasionally drops connections**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/problem/PRB0000051.md",
@@ -40671,7 +41174,8 @@
         "contract",
         "correlation_display"
       ],
-      "excerpt": "**Exchange server outage**"
+      "excerpt": "**Exchange server outage**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/problem/PRB0000053.md",
@@ -40752,7 +41256,8 @@
         "delivery_plan",
         "delivery_task"
       ],
-      "excerpt": "- **Number**: PRB0000053"
+      "excerpt": "- **Number**: PRB0000053",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/problem/PRB0000055.md",
@@ -40833,7 +41338,8 @@
         "cmdb_ci",
         "comments"
       ],
-      "excerpt": "- **Number**: PRB0000055"
+      "excerpt": "- **Number**: PRB0000055",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/problem/PRB0000105.md",
@@ -40914,7 +41420,8 @@
         "first_reported_by_task",
         "fix_at"
       ],
-      "excerpt": "**Email system is down again**"
+      "excerpt": "**Email system is down again**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/problem/PRB0000106.md",
@@ -40995,7 +41502,8 @@
         "delivery_task",
         "due_date"
       ],
-      "excerpt": "**The Webex application is unavailable to all employees**"
+      "excerpt": "**The Webex application is unavailable to all employees**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/problem/PRB0000109.md",
@@ -41076,7 +41584,8 @@
         "system",
         "administrator"
       ],
-      "excerpt": "**USB port has stopped working**"
+      "excerpt": "**USB port has stopped working**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/problem/PRB0001000.md",
@@ -41157,7 +41666,8 @@
         "fix_communicated_at",
         "fix_communicated_by"
       ],
-      "excerpt": "**Unable to connect to the VPN**"
+      "excerpt": "**Unable to connect to the VPN**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/problem/PRB0001001.md",
@@ -41238,7 +41748,8 @@
         "expected_start",
         "first_reported_by_task"
       ],
-      "excerpt": "**Issue in connecting to internet using modem.**"
+      "excerpt": "**Issue in connecting to internet using modem.**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/problem/PRB0001002.md",
@@ -41319,7 +41830,8 @@
         "first_reported_by_task",
         "fix_at"
       ],
-      "excerpt": "**Unable to connect to Wifi**"
+      "excerpt": "**Unable to connect to Wifi**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/problem/PRB0007601.md",
@@ -41400,7 +41912,8 @@
         "first_reported_by_task",
         "fix_at"
       ],
-      "excerpt": "**Unable to send or receive emails.**"
+      "excerpt": "**Unable to send or receive emails.**",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/sc_req_item/RITM0000001.md",
@@ -41481,7 +41994,8 @@
         "location",
         "made_sla"
       ],
-      "excerpt": "SC_REQ_ITEM RITM0000001"
+      "excerpt": "SC_REQ_ITEM RITM0000001",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/sc_req_item/RITM0000002.md",
@@ -41562,7 +42076,8 @@
         "opened_at",
         "opened_by"
       ],
-      "excerpt": "SC_REQ_ITEM RITM0000002"
+      "excerpt": "SC_REQ_ITEM RITM0000002",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/sc_req_item/RITM0000003.md",
@@ -41643,7 +42158,8 @@
         "location",
         "made_sla"
       ],
-      "excerpt": "SC_REQ_ITEM RITM0000003"
+      "excerpt": "SC_REQ_ITEM RITM0000003",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/sc_req_item/RITM0000004.md",
@@ -41724,7 +42240,8 @@
         "location",
         "made_sla"
       ],
-      "excerpt": "SC_REQ_ITEM RITM0000004"
+      "excerpt": "SC_REQ_ITEM RITM0000004",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/sc_req_item/RITM0000005.md",
@@ -41805,7 +42322,8 @@
         "knowledge",
         "location"
       ],
-      "excerpt": "SC_REQ_ITEM RITM0000005"
+      "excerpt": "SC_REQ_ITEM RITM0000005",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     },
     {
       "file": "knowledge/sc_task/TASK0000001.md",
@@ -41886,7 +42404,8 @@
         "system",
         "administrator"
       ],
-      "excerpt": "**Order from vendor or move from in-stock inventory"
+      "excerpt": "**Order from vendor or move from in-stock inventory",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
     }
   ]
 }
