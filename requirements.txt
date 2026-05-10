@@ -29,3 +29,5 @@ unstructured==0.13.5
 urllib3==2.7.0
 charset-normalizer==3.4.7
 chardet==7.4.3
+sentence-transformers>=2.7.0
+langchain-huggingface>=0.0.3
