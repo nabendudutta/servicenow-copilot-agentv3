@@ -1,5 +1,5 @@
 ---
-name: ServiceNow Copilot
+name: ServiceNow Copilot V3
 description: >
   Enterprise DevOps AI assistant backed by a FAISS vector database
   synced live from ServiceNow. Searches the internal database exclusively
