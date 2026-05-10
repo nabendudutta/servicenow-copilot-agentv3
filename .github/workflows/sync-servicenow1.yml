@@ -114,7 +114,7 @@ jobs:
       - name: Rebuild FAISS + keyword index
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
-        run: python sync/embedding_builder_githubv3.py
+        run: python sync/embedding_builder_githubv31.py
 
       # ── Commit the rebuilt vector DB ─────────────────────────────────────
       # Simple, conflict-free: pull first, then stage only vectordb/ and commit.
