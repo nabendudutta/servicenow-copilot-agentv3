@@ -6,7 +6,7 @@ description: >
   automatically without asking for permission. Internal DB is the only
   source for all ServiceNow record types.
 tools:
-  - run_in_terminal
+  - vscode_runInTerminal
 model: copilot
 ---
 
