@@ -159,7 +159,8 @@ if KEYWORD_INDEX.exists():
                 continue
 
             # Structured field token match
-            field_match = any(tok in flds for tok in query_tokens if len(tok) > 3)
+            long_tokens = [tok for tok in query_tokens if len(tok) > 3]
+            field_match = any(tok in flds for tok in long_tokens)
 
             # Keyword overlap (need 2+ to avoid noise)
             overlap = query_tokens & kws
