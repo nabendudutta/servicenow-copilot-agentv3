@@ -1,9 +1,9 @@
 {
-  "synced_at": "2026-05-10T16:15:25.767106Z",
+  "synced_at": "2026-05-11T03:44:04.864638Z",
   "base_url": "https://dev398042.service-now.com",
   "tables": {
     "incident": {
-      "count": 78,
+      "count": 79,
       "status": "ok"
     },
     "change_request": {
