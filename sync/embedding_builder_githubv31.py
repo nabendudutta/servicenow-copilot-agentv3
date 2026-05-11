@@ -5,33 +5,17 @@ embedding_builder_githubv3.py
 Builds the FAISS vector database from all Markdown files in knowledge/
 and writes a rich keyword + metadata index to vectordb/keyword_index.json.
 
-Embedding model
----------------
-Uses HuggingFace sentence-transformers running LOCALLY on the GitHub
-Actions runner (CPU). Zero API calls. Zero rate limits. Zero daily caps.
+Embedding: sentence-transformers/all-MiniLM-L6-v2 (local CPU, no API calls)
 
-  Model : sentence-transformers/all-MiniLM-L6-v2
-  Size  : ~90 MB (downloaded once, cached automatically)
-  Speed : ~1000-2000 chunks/min on CPU
-  Dims  : 384
-
-OpenAI / GitHub Models token is NOT required by this script.
-It is still used by the Copilot agent for final answer generation,
-but never for embedding or vector search.
-
-Design goals
-------------
-1. Every FAISS chunk carries full metadata (table, record_id, state,
-   priority, section) so the Copilot agent can pre-filter before
-   semantic search.
-2. Chunk boundaries respect Markdown ## headings -- no mid-field splits.
-3. Keyword index has ITSM-specific structured fields for fast pre-screen.
-4. FAISS index always rebuilt from scratch on every run.
-
-Install dependencies
---------------------
-  pip install sentence-transformers langchain-huggingface langchain-community
-              langchain-text-splitters faiss-cpu pyyaml python-dotenv
+Key fixes vs previous version
+------------------------------
+1. short_description stored as dedicated field in every index entry
+2. short_desc_tokens stored separately for single-token match logic
+3. Keyword limit raised from 60 to 300
+4. STOP_WORDS restricted to true English filler ONLY
+   (never strips tech tool names like prometheus, alertmanager, terraform)
+5. ## Search Keywords section given its own chunk with high signal density
+6. Index stores: short_description, subcategory, cmdb_ci, assignment_group
 """
 
 import os
@@ -59,27 +43,22 @@ load_dotenv()
 
 KNOWLEDGE_DIR = Path("knowledge")
 VECTORDB_DIR  = Path("vectordb")
+HF_CACHE_DIR  = Path(".hf_cache")
 
-# HuggingFace model -- runs 100% locally, no API calls
-# all-MiniLM-L6-v2: best balance of speed, size, and quality for ITSM text
-HF_MODEL_NAME  = "sentence-transformers/all-MiniLM-L6-v2"
-HF_CACHE_DIR   = Path(".hf_cache")   # local cache so model is not re-downloaded
+HF_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 
-# Chunk sizes tuned for ITSM records
 FALLBACK_CHUNK_SIZE    = 1200
 FALLBACK_CHUNK_OVERLAP = 200
+EMBED_BATCH_SIZE       = 200   # no rate limit -- memory tuning only
 
-# Batch size for FAISS ingestion (not API calls -- purely memory tuning)
-# Larger batches are fine since there is no rate limit
-EMBED_BATCH_SIZE = 200
-
-# ITSM stop-words -- present in every record, add no search signal
+# True English filler ONLY -- NEVER add tech tool names here
+# 'prometheus', 'alertmanager', 'terraform', etc must never appear here
 STOP_WORDS = {
     "that", "this", "with", "from", "have", "will", "were", "been",
     "your", "they", "when", "what", "which", "also", "more", "than",
-    "then", "into", "some", "none", "true", "false",
-    "table", "record", "field", "value", "summary", "description",
-    "section", "json", "raw", "fields", "markdown",
+    "then", "into", "some", "none", "true", "false", "after", "before",
+    "about", "above", "below", "there", "their", "these", "those",
+    "would", "could", "should", "shall", "while", "where",
 }
 
 # -----------------------------------------------------------------------
@@ -87,7 +66,6 @@ STOP_WORDS = {
 # -----------------------------------------------------------------------
 
 def extract_frontmatter(text):
-    """Extract YAML block between first two --- delimiters."""
     if not text.startswith("---"):
         return {}
     end = text.find("\n---", 3)
@@ -99,21 +77,11 @@ def extract_frontmatter(text):
         return {}
 
 # -----------------------------------------------------------------------
-# Section-aware Markdown splitter
-#
-# 1. Split on ## headings first -- Summary, Description, Resolution Notes,
-#    All Fields each become their own chunk with full metadata attached.
-# 2. Sections longer than FALLBACK_CHUNK_SIZE are further split by the
-#    recursive character splitter.
-# 3. Every sub-chunk carries table, record_id, state, priority, section
-#    so the agent can filter before semantic search.
+# Section-aware splitter
 # -----------------------------------------------------------------------
 
 HEADER_SPLITTER = MarkdownHeaderTextSplitter(
-    headers_to_split_on=[
-        ("#",  "title"),
-        ("##", "section"),
-    ],
+    headers_to_split_on=[("#", "title"), ("##", "section")],
     strip_headers=False,
 )
 
@@ -126,98 +94,143 @@ FALLBACK_SPLITTER = RecursiveCharacterTextSplitter(
 
 def split_document(path, text, fm):
     """
-    Split one Markdown file into LangChain Documents.
-    Every Document carries full ITSM metadata for agent pre-filtering.
+    Split one .md file into LangChain Documents.
+    ## Search Keywords becomes a short focused chunk with dense signal.
+    Every chunk carries full metadata for agent pre-filtering.
     """
     base_meta = {
-        "table":       fm.get("table",       path.parent.name),
-        "record_id":   fm.get("record_id",   path.stem),
-        "sys_id":      fm.get("sys_id",      ""),
-        "state":       fm.get("state",       ""),
-        "priority":    fm.get("priority",    ""),
-        "category":    fm.get("category",    ""),
-        "opened_at":   fm.get("opened_at",   ""),
-        "updated_at":  fm.get("updated_at",  ""),
-        "file":        str(path),
-        # change_request extras
-        "change_type": fm.get("change_type", ""),
-        "phase":       fm.get("phase",       ""),
-        "risk":        fm.get("risk",        ""),
-        # incident extras
-        "severity":    fm.get("severity",    ""),
-        "urgency":     fm.get("urgency",     ""),
-        "impact":      fm.get("impact",      ""),
+        "table":             fm.get("table",             path.parent.name),
+        "record_id":         fm.get("record_id",         path.stem),
+        "sys_id":            fm.get("sys_id",            ""),
+        "state":             fm.get("state",             ""),
+        "priority":          fm.get("priority",          ""),
+        "category":          fm.get("category",          ""),
+        "subcategory":       fm.get("subcategory",       ""),
+        "short_description": fm.get("short_description", ""),
+        "cmdb_ci":           fm.get("cmdb_ci",           ""),
+        "assignment_group":  fm.get("assignment_group",  ""),
+        "opened_at":         fm.get("opened_at",         ""),
+        "updated_at":        fm.get("updated_at",        ""),
+        "file":              str(path),
+        "change_type":       fm.get("change_type",       ""),
+        "phase":             fm.get("phase",             ""),
+        "risk":              fm.get("risk",              ""),
+        "severity":          fm.get("severity",          ""),
+        "urgency":           fm.get("urgency",           ""),
+        "impact":            fm.get("impact",            ""),
     }
 
     docs = []
     for chunk in HEADER_SPLITTER.split_text(text):
         section    = (chunk.metadata.get("section")
-                      or chunk.metadata.get("title")
-                      or "body")
+                      or chunk.metadata.get("title") or "body")
         chunk_meta = {**base_meta, "section": section}
         chunk_text = chunk.page_content.strip()
         if not chunk_text:
             continue
 
-        # Raw JSON / All Fields: keep as single chunk (exact-match use only)
-        if section.lower() in ("raw json", "all fields"):
-            docs.append(Document(page_content=chunk_text, metadata=chunk_meta))
+        # Raw JSON: single chunk, not split further
+        if section.lower() == "raw json":
+            docs.append(Document(page_content=chunk_text,
+                                 metadata=chunk_meta))
             continue
 
-        # Fallback-split oversized sections
+        # All Fields: single chunk
+        if section.lower() == "all fields":
+            docs.append(Document(page_content=chunk_text,
+                                 metadata=chunk_meta))
+            continue
+
+        # All other sections including Search Keywords
         if len(chunk_text) > FALLBACK_CHUNK_SIZE:
             for sub in FALLBACK_SPLITTER.split_text(chunk_text):
                 if sub.strip():
-                    docs.append(Document(
-                        page_content=sub.strip(),
-                        metadata=chunk_meta,
-                    ))
+                    docs.append(Document(page_content=sub.strip(),
+                                         metadata=chunk_meta))
         else:
-            docs.append(Document(page_content=chunk_text, metadata=chunk_meta))
-
+            docs.append(Document(page_content=chunk_text,
+                                 metadata=chunk_meta))
     return docs
 
 # -----------------------------------------------------------------------
 # Keyword index entry builder
+#
+# DATABASE STRUCTURE per entry:
+#   record_id         -- unique filename key (INC/CHG/PRB number)
+#   sys_id            -- unique ServiceNow global key
+#   table             -- incident | change_request | problem | etc
+#   short_description -- verbatim, dedicated field for single-token match
+#   short_desc_tokens -- tokenised list for O(1) set intersection
+#   keywords          -- up to 300 unique tech terms from full body
+#   state/priority/category/subcategory/severity/urgency/impact/cmdb_ci
+#   assignment_group  -- team name
+#   opened_at/updated_at -- dates
+#   excerpt           -- first meaningful line for display
+#   embedding_model   -- model name for consistency check
 # -----------------------------------------------------------------------
 
 def build_keyword_entry(path, text, fm):
-    """
-    Build a keyword index entry for fast pre-screen before vector search.
-    Includes structured ITSM fields AND free-text keywords.
-    """
-    body  = re.sub(r'^---.*?---\s*', '', text, flags=re.DOTALL)
-    words = re.findall(r'\b[A-Za-z][A-Za-z0-9_\-]{3,}\b', body.lower())
-    kws   = list(dict.fromkeys(w for w in words if w not in STOP_WORDS))[:60]
+    body = re.sub(r'^---.*?---\s*', '', text, flags=re.DOTALL)
 
-    excerpt = ""
-    for line in body.splitlines():
-        line = line.strip().lstrip("#").strip()
-        if len(line) > 20:
-            excerpt = line[:300]
-            break
+    # Extract keywords from full body -- limit 300, no tech term filtering
+    words = re.findall(r'\b[A-Za-z][A-Za-z0-9_\-\.]{2,}\b', body.lower())
+    kws   = list(dict.fromkeys(
+        w for w in words if w not in STOP_WORDS
+    ))[:300]
+
+    # short_description from front-matter (most reliable source)
+    short_desc = fm.get("short_description", "")
+
+    # Tokenise short_description separately for single-token match
+    sd_tokens = []
+    if short_desc:
+        sd_tokens = re.findall(
+            r'\b[A-Za-z][A-Za-z0-9_\-\.]{2,}\b',
+            short_desc.lower()
+        )
+        # Remove only true filler from short_desc tokens
+        sd_tokens = [t for t in sd_tokens if t not in STOP_WORDS]
+
+    # Excerpt: prefer short_description, else first body line
+    excerpt = short_desc[:300] if short_desc else ""
+    if not excerpt:
+        for line in body.splitlines():
+            line = line.strip().lstrip("#").strip()
+            if len(line) > 20:
+                excerpt = line[:300]
+                break
 
     return {
-        "file":        str(path),
-        "record_id":   fm.get("record_id",   path.stem),
-        "table":       fm.get("table",        path.parent.name),
-        "sys_id":      fm.get("sys_id",       ""),
-        "state":       fm.get("state",        ""),
-        "priority":    fm.get("priority",     ""),
-        "category":    fm.get("category",     ""),
-        "severity":    fm.get("severity",     ""),
-        "urgency":     fm.get("urgency",      ""),
-        "impact":      fm.get("impact",       ""),
-        "change_type": fm.get("change_type",  ""),
-        "phase":       fm.get("phase",        ""),
-        "risk":        fm.get("risk",         ""),
-        "opened_at":   fm.get("opened_at",    ""),
-        "updated_at":  fm.get("updated_at",   ""),
-        "size_chars":  len(text),
-        "keywords":    kws,
-        "excerpt":     excerpt,
-        # Store the model name so query_vectordb.py can verify it matches
-        "embedding_model": HF_MODEL_NAME,
+        # -- Unique keys --
+        "record_id":         fm.get("record_id",         path.stem),
+        "sys_id":            fm.get("sys_id",            ""),
+        # -- Location --
+        "file":              str(path),
+        "table":             fm.get("table",             path.parent.name),
+        # -- Primary search: short_description --
+        "short_description": short_desc,
+        "short_desc_tokens": sd_tokens,
+        # -- Structured ITSM fields --
+        "state":             fm.get("state",             ""),
+        "priority":          fm.get("priority",          ""),
+        "category":          fm.get("category",          ""),
+        "subcategory":       fm.get("subcategory",       ""),
+        "severity":          fm.get("severity",          ""),
+        "urgency":           fm.get("urgency",           ""),
+        "impact":            fm.get("impact",            ""),
+        "change_type":       fm.get("change_type",       ""),
+        "phase":             fm.get("phase",             ""),
+        "risk":              fm.get("risk",              ""),
+        "cmdb_ci":           fm.get("cmdb_ci",           ""),
+        "assignment_group":  fm.get("assignment_group",  ""),
+        "opened_at":         fm.get("opened_at",         ""),
+        "updated_at":        fm.get("updated_at",        ""),
+        # -- Keyword search --
+        "keywords":          kws,
+        "size_chars":        len(text),
+        "excerpt":           excerpt,
+        # -- Provenance --
+        "embedding_model":   HF_MODEL_NAME,
     }
 
 # -----------------------------------------------------------------------
@@ -229,27 +242,21 @@ def batch_list(lst, size):
         yield i, lst[i:i + size]
 
 # -----------------------------------------------------------------------
-# Embedding loop (no rate limits -- runs at full CPU speed)
+# Embedding loop
 # -----------------------------------------------------------------------
 
 def embed_all(chunks, embeddings):
-    """
-    Embed all chunks into FAISS using local HuggingFace model.
-    No API calls, no rate limits, no retries needed.
-    Processes EMBED_BATCH_SIZE chunks at a time to manage memory.
-    """
     vector_db     = None
     total_batches = -(-len(chunks) // EMBED_BATCH_SIZE)
+    t_start       = time.time()
 
-    print(f"[INFO] Embedding {len(chunks)} chunks in {total_batches} "
-          f"batches of {EMBED_BATCH_SIZE} (local CPU, no API calls)")
-
-    t_start = time.time()
+    print(f"[INFO] {len(chunks)} chunks | {total_batches} batches | "
+          f"batch_size={EMBED_BATCH_SIZE} | local CPU")
 
     for batch_idx, batch in batch_list(chunks, EMBED_BATCH_SIZE):
-        pct = int(((batch_idx) / len(chunks)) * 100)
+        pct = int((batch_idx / max(len(chunks), 1)) * 100)
         print(f"  [EMBED] batch {batch_idx // EMBED_BATCH_SIZE + 1}/"
-              f"{total_batches}  ({len(batch)} chunks)  {pct}% ...",
+              f"{total_batches} ({len(batch)} chunks) {pct}% ...",
               end=" ", flush=True)
         try:
             if vector_db is None:
@@ -261,8 +268,8 @@ def embed_all(chunks, embeddings):
             print(f"[FAIL] {exc}")
 
     elapsed = time.time() - t_start
-    print(f"[INFO] Embedding complete in {elapsed:.1f}s "
-          f"({len(chunks)/elapsed:.0f} chunks/sec)")
+    rate    = len(chunks) / elapsed if elapsed > 0 else 0
+    print(f"[INFO] Done: {elapsed:.1f}s ({rate:.0f} chunks/sec)")
     return vector_db
 
 # -----------------------------------------------------------------------
@@ -273,39 +280,29 @@ def main():
     KNOWLEDGE_DIR.mkdir(exist_ok=True)
     HF_CACHE_DIR.mkdir(exist_ok=True)
 
-    # -- Load HuggingFace embedding model --------------------------------
-    # Model is downloaded once to HF_CACHE_DIR and cached for subsequent runs.
-    # On GitHub Actions this is fast because runners have internet access.
-    # On a private runner the model can be pre-downloaded and committed.
-    print(f"[INFO] Loading local embedding model: {HF_MODEL_NAME}")
-    print(f"[INFO] Cache dir: {HF_CACHE_DIR}")
-    print(f"[INFO] No API key required -- fully local inference")
-
+    print(f"[INFO] Loading model: {HF_MODEL_NAME}")
     embeddings = HuggingFaceEmbeddings(
-        model_name       = HF_MODEL_NAME,
-        cache_folder     = str(HF_CACHE_DIR),
-        model_kwargs     = {"device": "cpu"},
-        encode_kwargs    = {"normalize_embeddings": True},
-        # normalize_embeddings=True converts L2 distance to cosine similarity,
-        # which means FAISS scores are directly interpretable as 0-1 similarity
+        model_name    = HF_MODEL_NAME,
+        cache_folder  = str(HF_CACHE_DIR),
+        model_kwargs  = {"device": "cpu"},
+        encode_kwargs = {"normalize_embeddings": True},
     )
-    print(f"[OK] Model loaded")
+    print("[OK] Model loaded")
 
-    # -- Load & split all Markdown files ---------------------------------
     all_chunks    = []
     keyword_index = []
     skipped       = []
 
     md_files = sorted(KNOWLEDGE_DIR.rglob("*.md"))
-    print(f"\n[INFO] Found {len(md_files)} Markdown files in {KNOWLEDGE_DIR}/")
+    print(f"\n[INFO] {len(md_files)} Markdown files in {KNOWLEDGE_DIR}/")
 
     for path in md_files:
         if "_meta" in path.parts:
             continue
         try:
-            text     = path.read_text(encoding="utf-8", errors="ignore")
-            fm       = extract_frontmatter(text)
-            chunks   = split_document(path, text, fm)
+            text   = path.read_text(encoding="utf-8", errors="ignore")
+            fm     = extract_frontmatter(text)
+            chunks = split_document(path, text, fm)
             all_chunks.extend(chunks)
             keyword_index.append(build_keyword_entry(path, text, fm))
             print(f"  [OK] {path}  ({len(chunks)} chunks)")
@@ -314,57 +311,44 @@ def main():
             skipped.append(str(path))
 
     if not all_chunks:
-        raise ValueError(
-            "No chunks produced. "
-            "Check that knowledge/ contains .md files from servicenow_sync.py."
-        )
+        raise ValueError("No chunks produced. Check knowledge/ directory.")
 
-    print(f"\n[INFO] Documents      : {len(keyword_index)}")
-    print(f"[INFO] Total chunks   : {len(all_chunks)}")
-    print(f"[INFO] Skipped files  : {len(skipped)}")
+    print(f"\n[INFO] Documents : {len(keyword_index)}")
+    print(f"[INFO] Chunks    : {len(all_chunks)}")
+    print(f"[INFO] Skipped   : {len(skipped)}")
 
-    # -- Embed into FAISS ------------------------------------------------
     print()
     vector_db = embed_all(all_chunks, embeddings)
-
     if vector_db is None:
-        raise RuntimeError(
-            "[ERROR] No vectors were produced. Check the knowledge/ directory."
-        )
+        raise RuntimeError("[ERROR] No vectors produced.")
 
-    # -- Save FAISS index ------------------------------------------------
     VECTORDB_DIR.mkdir(exist_ok=True)
     vector_db.save_local(str(VECTORDB_DIR))
-    print(f"\n[OK] FAISS vector DB saved -> {VECTORDB_DIR}/")
+    print(f"\n[OK] FAISS saved -> {VECTORDB_DIR}/")
 
-    # -- Save keyword + metadata index -----------------------------------
     by_table = {}
     for entry in keyword_index:
         by_table.setdefault(entry["table"], []).append(entry)
 
-    index_payload = {
+    payload = {
         "built_at":        datetime.datetime.utcnow().isoformat() + "Z",
-        "embedding_model": HF_MODEL_NAME,   # stored so query script can verify
+        "embedding_model": HF_MODEL_NAME,
         "doc_count":       len(keyword_index),
         "chunk_count":     len(all_chunks),
         "tables":          list(by_table.keys()),
         "by_table":        by_table,
         "entries":         keyword_index,
     }
+    idx_path = VECTORDB_DIR / "keyword_index.json"
+    idx_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    print(f"[OK] Keyword index -> {idx_path} ({len(keyword_index)} entries)")
 
-    index_path = VECTORDB_DIR / "keyword_index.json"
-    index_path.write_text(json.dumps(index_payload, indent=2), encoding="utf-8")
-    print(f"[OK] Keyword index saved -> {index_path} "
-          f"({len(keyword_index)} entries)")
-
-    # -- Summary ---------------------------------------------------------
     print("\n" + "=" * 55)
-    print("Vector DB build complete")
-    print(f"Model : {HF_MODEL_NAME} (local, no API)")
+    print(f"Vector DB complete | model: {HF_MODEL_NAME}")
     print("=" * 55)
     for tbl, entries in by_table.items():
-        print(f"  {tbl:<22}  {len(entries):>6} records indexed")
-    print(f"\n  Total chunks embedded : {len(all_chunks)}")
+        print(f"  {tbl:<22}  {len(entries):>6} records")
+    print(f"  Total chunks : {len(all_chunks)}")
     print("=" * 55)
 
 

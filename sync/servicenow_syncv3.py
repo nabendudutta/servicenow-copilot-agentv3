@@ -1,21 +1,30 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
-servicenow_sync.py
-Fetches ALL records from ServiceNow (incidents, change requests, and more)
-irrespective of state/status, and writes them as structured Markdown files
+servicenow_syncv3.py
+Fetches ALL records from ServiceNow and writes structured Markdown files
 optimised for FAISS vector search and GitHub Copilot agent retrieval.
 
+KEY CHANGE: every .md file now has a ## Search Keywords section written
+FIRST, containing short_description verbatim plus extracted tech keywords.
+This guarantees tool names like 'prometheus', 'alertmanager', 'terraform'
+are always present in a compact, high-signal chunk that scores strongly
+against matching queries.
+
+Unique key per record: sys_id (ServiceNow globally unique identifier).
+Filename key: number (INC/CHG/PRB prefix + digits), falling back to sys_id.
+
 Output layout
-─────────────
+-------------
 knowledge/
-  incident/          ← one .md per incident
-  change_request/    ← one .md per change order
-  problem/
-  kb_knowledge/
-  sc_req_item/
-  sc_task/
+  incident/       -- INC*.md
+  change_request/ -- CHG*.md
+  problem/        -- PRB*.md
+  kb_knowledge/   -- KB*.md
+  sc_req_item/    -- RITM*.md
+  sc_task/        -- TASK*.md
   _meta/
-    manifest.json    ← record counts, sync timestamp, schema per table
+    manifest.json
 """
 
 import os
@@ -28,17 +37,19 @@ from pathlib import Path
 import requests
 from requests.auth import HTTPBasicAuth
 
-# ══════════════════════════════════════════════════════════════
-# Environment / Config
-# ══════════════════════════════════════════════════════════════
+# -----------------------------------------------------------------------
+# Environment
+# -----------------------------------------------------------------------
 
 SNOW_INSTANCE = os.getenv("SNOW_INSTANCE", "")
 SNOW_USER     = os.getenv("SNOW_USER", "")
 SNOW_PASSWORD = os.getenv("SNOW_PASSWORD", "")
 
-missing = [v for v, k in [("SNOW_INSTANCE", SNOW_INSTANCE),
-                           ("SNOW_USER",     SNOW_USER),
-                           ("SNOW_PASSWORD", SNOW_PASSWORD)] if not k]
+missing = [v for v, k in [
+    ("SNOW_INSTANCE", SNOW_INSTANCE),
+    ("SNOW_USER",     SNOW_USER),
+    ("SNOW_PASSWORD", SNOW_PASSWORD),
+] if not k]
 if missing:
     raise EnvironmentError(f"Missing environment variables: {missing}")
 
@@ -51,17 +62,14 @@ BASE_URL = (
 KNOWLEDGE_DIR = Path("knowledge")
 META_DIR      = KNOWLEDGE_DIR / "_meta"
 
-# ══════════════════════════════════════════════════════════════
-# Table Definitions
-# query=""  →  NO filter  →  ALL records regardless of state
-# ══════════════════════════════════════════════════════════════
+# -----------------------------------------------------------------------
+# Table definitions  (query="" = ALL records, no state filter)
+# -----------------------------------------------------------------------
 
 TABLES = {
     "incident": {
-        "query":     "",        # ALL incidents — open, closed, resolved, cancelled
+        "query":     "",
         "page_size": 1000,
-        # Fields surfaced prominently in the Markdown header block.
-        # All other fields are still written under "All Fields".
         "headline_fields": [
             "number", "short_description", "description",
             "state", "priority", "severity", "urgency",
@@ -74,7 +82,7 @@ TABLES = {
         ],
     },
     "change_request": {
-        "query":     "",        # ALL change orders — all types and states
+        "query":     "",
         "page_size": 1000,
         "headline_fields": [
             "number", "short_description", "description",
@@ -130,28 +138,26 @@ TABLES = {
     },
 }
 
-# ══════════════════════════════════════════════════════════════
+# -----------------------------------------------------------------------
 # HTTP helpers
-# ══════════════════════════════════════════════════════════════
+# -----------------------------------------------------------------------
 
 AUTH    = HTTPBasicAuth(SNOW_USER, SNOW_PASSWORD)
 HEADERS = {"Accept": "application/json"}
-
 MAX_RETRIES   = 4
-RETRY_BACKOFF = 2   # seconds; doubles each retry
+RETRY_BACKOFF = 2
 
 
-def _fetch_page(table: str, query: str, limit: int, offset: int) -> list:
+def _fetch_page(table, query, limit, offset):
     url    = f"{BASE_URL}/api/now/table/{table}"
     params = {
         "sysparm_limit":                  limit,
         "sysparm_offset":                 offset,
-        "sysparm_display_value":          "all",   # {value, display_value} per field
+        "sysparm_display_value":          "all",
         "sysparm_exclude_reference_link": "true",
     }
     if query:
         params["sysparm_query"] = query
-
     for attempt in range(1, MAX_RETRIES + 1):
         try:
             r = requests.get(url, auth=AUTH, headers=HEADERS,
@@ -162,37 +168,33 @@ def _fetch_page(table: str, query: str, limit: int, offset: int) -> list:
             if attempt == MAX_RETRIES:
                 raise
             wait = RETRY_BACKOFF ** attempt
-            print(f"    attempt {attempt} failed ({exc}) — retry in {wait}s")
+            print(f"    attempt {attempt} failed ({exc}) - retry in {wait}s")
             time.sleep(wait)
     return []
 
 
-def fetch_all(table: str, config: dict) -> list:
+def fetch_all(table, config):
     records, offset = [], 0
-    ps = config["page_size"]
-    q  = config.get("query", "")
-    filter_label = repr(q) if q else "NONE - fetching ALL records"
-    print(f"\n▶  {table}  (filter={filter_label})")
+    ps    = config["page_size"]
+    q     = config.get("query", "")
+    label = repr(q) if q else "NONE - ALL records"
+    print(f"\n[SYNC] {table}  (filter={label})")
     while True:
-        print(f"   offset={offset} …", end=" ", flush=True)
+        print(f"   offset={offset} ...", end=" ", flush=True)
         page = _fetch_page(table, q, ps, offset)
         print(f"{len(page)} records")
         records.extend(page)
         if len(page) < ps:
             break
         offset += ps
-    print(f"   ✓ total {len(records)} records")
+    print(f"   [OK] {len(records)} total records")
     return records
 
+# -----------------------------------------------------------------------
+# Value extraction
+# -----------------------------------------------------------------------
 
-# ══════════════════════════════════════════════════════════════
-# Value extraction helpers
-# When sysparm_display_value=all, each field is a dict:
-#   {"value": "raw_code", "display_value": "Human Label"}
-# ══════════════════════════════════════════════════════════════
-
-def _val(field_data) -> str:
-    """Human-readable display value, falling back to raw."""
+def _val(field_data):
     if isinstance(field_data, dict):
         dv = field_data.get("display_value", "")
         rv = field_data.get("value", "")
@@ -200,95 +202,189 @@ def _val(field_data) -> str:
     return str(field_data) if field_data is not None else ""
 
 
-def _raw(field_data) -> str:
-    """Raw API value only."""
+def _raw(field_data):
     if isinstance(field_data, dict):
         return str(field_data.get("value", ""))
     return str(field_data) if field_data is not None else ""
 
 
-def _record_id(item: dict) -> str:
+def _record_id(item):
+    """
+    Returns the canonical filename-safe record ID.
+    Priority: number (INC/CHG/PRB...) > name > sys_id
+    sys_id is always unique in ServiceNow -- final fallback.
+    """
     for key in ("number", "name", "sys_id"):
         v = _val(item.get(key, ""))
         if v:
             return re.sub(r'[^\w\-]', '_', v)
     return "unknown"
 
+# -----------------------------------------------------------------------
+# Keyword extractor
+# Only true English filler is stripped -- NEVER tech tool names.
+# -----------------------------------------------------------------------
 
-# ══════════════════════════════════════════════════════════════
+_FILLER = {
+    "that", "this", "with", "from", "have", "will", "were", "been",
+    "your", "they", "when", "what", "which", "also", "more", "than",
+    "then", "into", "some", "none", "true", "false", "after", "before",
+    "about", "above", "below", "there", "their", "these", "those",
+    "would", "could", "should", "shall", "while", "where", "doing",
+    "using", "being", "having", "making", "taking", "getting",
+}
+
+
+def _extract_tech_keywords(text):
+    """
+    Extract unique tech keywords from text.
+    Includes tool names, error codes, system names, version strings.
+    Returns list sorted by length descending (longer = more specific).
+    """
+    if not text:
+        return []
+    # Match: words 3+ chars including dots and dashes (e.g. v2.5, force-unlock)
+    words = re.findall(r'\b[A-Za-z][A-Za-z0-9_\-\.]{2,}\b', text.lower())
+    freq  = {}
+    for w in words:
+        if w not in _FILLER:
+            freq[w] = freq.get(w, 0) + 1
+    # Sort by frequency desc, then length desc (more specific terms first)
+    return sorted(freq.keys(), key=lambda w: (-freq[w], -len(w)))
+
+# -----------------------------------------------------------------------
 # Markdown renderer
 #
-# Structure is tuned for FAISS + GitHub Copilot agent retrieval:
+# DB structure per record:
 #
-#  1. YAML front-matter  →  structured metadata for pre-filtering
-#                           before semantic search (table, state,
-#                           priority, dates, IDs)
+#   YAML front-matter       -- unique keys: sys_id, record_id (number)
+#                              structured fields: state, priority, category,
+#                              subcategory, severity, urgency, impact,
+#                              short_description, cmdb_ci, assignment_group
 #
-#  2. ## Summary block   →  dense human-readable headline fields.
-#                           Most agent queries will match here.
+#   ## Search Keywords      -- FIRST SECTION (new, critical for search)
+#                              short_description verbatim on its own line
+#                              category, subcategory, CI, tech keywords
+#                              This becomes a short focused embedding chunk
+#                              matching queries like "prometheus alertmanager"
 #
-#  3. ## Description / Resolution / Plan blocks
-#                        →  natural chunk boundaries; long-form text
-#                           gets its own embedding chunk
-#
-#  4. ## All Fields table →  complete field coverage; used for
-#                            precise field-level lookups
-#
-#  5. ## Raw JSON         →  exact-match safety net; last so it
-#                            doesn't dominate the embedding
-# ══════════════════════════════════════════════════════════════
+#   ## Summary              -- all headline fields as bullet list
+#   ## Description          -- full description / long text
+#   ## Resolution Notes     -- close_notes with root cause + steps
+#   ## Implementation Plan  -- change records only
+#   ## Backout Plan         -- change records only
+#   ## Test Plan            -- change records only
+#   ## All Fields           -- complete field table (all API fields)
+#   ## Raw JSON             -- verbatim API payload
+# -----------------------------------------------------------------------
 
-def render_markdown(table: str, item: dict, headline_fields: list) -> str:
+def render_markdown(table, item, headline_fields):
     rid        = _record_id(item)
+    sys_id_val = _raw(item.get("sys_id", ""))
     short_desc = _val(item.get("short_description", "")) or "(no description)"
 
     lines = []
 
-    # ── YAML front-matter ──────────────────────────────────────
+    # -- YAML front-matter ------------------------------------------------
+    # sys_id = globally unique key in ServiceNow
+    # record_id = number (INC/CHG/PRB) = human-readable unique key
     fm = {
-        "record_id":  rid,
-        "table":      table,
-        "sys_id":     _raw(item.get("sys_id", "")),
-        "state":      _val(item.get("state", "")),
-        "priority":   _val(item.get("priority", "")),
-        "category":   _val(item.get("category", "")),
-        "opened_at":  _val(item.get("opened_at", "")),
-        "updated_at": _val(item.get("sys_updated_on", "")),
+        "record_id":         rid,
+        "sys_id":            sys_id_val,
+        "table":             table,
+        "short_description": short_desc,
+        "state":             _val(item.get("state", "")),
+        "priority":          _val(item.get("priority", "")),
+        "category":          _val(item.get("category", "")),
+        "subcategory":       _val(item.get("subcategory", "")),
+        "cmdb_ci":           _val(item.get("cmdb_ci", "")),
+        "assignment_group":  _val(item.get("assignment_group", "")),
+        "assigned_to":       _val(item.get("assigned_to", "")),
+        "opened_at":         _val(item.get("opened_at", "")),
+        "updated_at":        _val(item.get("sys_updated_on", "")),
     }
-    if table == "change_request":
-        fm["change_type"] = _val(item.get("type", ""))
-        fm["phase"]       = _val(item.get("phase", ""))
-        fm["risk"]        = _val(item.get("risk", ""))
     if table == "incident":
         fm["severity"] = _val(item.get("severity", ""))
         fm["urgency"]  = _val(item.get("urgency", ""))
         fm["impact"]   = _val(item.get("impact", ""))
+    if table == "change_request":
+        fm["change_type"] = _val(item.get("type", ""))
+        fm["phase"]       = _val(item.get("phase", ""))
+        fm["risk"]        = _val(item.get("risk", ""))
 
     lines.append("---")
     for k, v in fm.items():
-        lines.append(f'{k}: "{str(v).replace(chr(34), chr(39))}"')
+        safe_v = str(v).replace('"', "'").replace('\n', ' ')
+        lines.append(f'{k}: "{safe_v}"')
     lines.append("---")
     lines.append("")
 
-    # ── Title ──────────────────────────────────────────────────
+    # -- Title ------------------------------------------------------------
     lines.append(f"# {table.upper()} {rid}")
     lines.append(f"**{short_desc}**")
     lines.append("")
 
-    # ── Summary (dense; agent hits this first) ─────────────────
+    # -- Search Keywords (CRITICAL NEW SECTION) ---------------------------
+    # This is the primary target for keyword and vector search.
+    # Kept SHORT and FOCUSED so its embedding vector strongly represents
+    # the key terms. Placed first so it's the first chunk the splitter
+    # produces -- highest weight in retrieval.
+    lines.append("## Search Keywords")
+    lines.append("")
+    lines.append(f"short_description: {short_desc}")
+
+    cat    = _val(item.get("category", ""))
+    subcat = _val(item.get("subcategory", ""))
+    ci     = _val(item.get("cmdb_ci", ""))
+    ag     = _val(item.get("assignment_group", ""))
+    pri    = _val(item.get("priority", ""))
+    sev    = _val(item.get("severity", ""))
+
+    if cat:    lines.append(f"category: {cat}")
+    if subcat: lines.append(f"subcategory: {subcat}")
+    if ci:     lines.append(f"affected_system: {ci}")
+    if ag:     lines.append(f"team: {ag}")
+    if pri:    lines.append(f"priority: {pri}")
+    if sev:    lines.append(f"severity: {sev}")
+
+    # Collect tech keywords from the three most important text fields
+    # short_description, description/text, close_notes
+    # These are merged and deduplicated, limited to 300 terms
+    kw_sources = [
+        _val(item.get("short_description", "")),
+        _val(item.get("description", "")) or _val(item.get("text", "")),
+        _val(item.get("close_notes", "")),
+        subcat,
+        ci,
+    ]
+    all_kw_flat = []
+    for src in kw_sources:
+        all_kw_flat.extend(_extract_tech_keywords(src))
+
+    # Deduplicate while preserving highest-frequency order
+    seen_kw = {}
+    for kw in all_kw_flat:
+        seen_kw[kw] = seen_kw.get(kw, 0) + 1
+    sorted_kw = sorted(seen_kw.keys(),
+                       key=lambda w: (-seen_kw[w], -len(w)))[:300]
+    if sorted_kw:
+        lines.append(f"keywords: {' '.join(sorted_kw)}")
+
+    lines.append("")
+
+    # -- Summary ----------------------------------------------------------
     lines.append("## Summary")
     lines.append("")
     for f in headline_fields:
         v = _val(item.get(f, ""))
-        if v and f not in ("description", "text",
-                            "close_notes", "justification",
-                            "implementation_plan", "backout_plan",
-                            "test_plan"):
+        if v and f not in ("description", "text", "close_notes",
+                           "justification", "implementation_plan",
+                           "backout_plan", "test_plan"):
             label = f.replace("_", " ").title()
             lines.append(f"- **{label}**: {v}")
     lines.append("")
 
-    # ── Description ────────────────────────────────────────────
+    # -- Description ------------------------------------------------------
     desc = _val(item.get("description", "")) or _val(item.get("text", ""))
     if desc and desc.strip():
         lines.append("## Description")
@@ -296,7 +392,7 @@ def render_markdown(table: str, item: dict, headline_fields: list) -> str:
         lines.append(desc.strip())
         lines.append("")
 
-    # ── Resolution / close notes ───────────────────────────────
+    # -- Resolution Notes -------------------------------------------------
     close_notes = _val(item.get("close_notes", ""))
     if close_notes and close_notes.strip():
         lines.append("## Resolution Notes")
@@ -304,21 +400,21 @@ def render_markdown(table: str, item: dict, headline_fields: list) -> str:
         lines.append(close_notes.strip())
         lines.append("")
 
-    # ── Change-specific plan sections ─────────────────────────
+    # -- Change plan sections ---------------------------------------------
     for field, label in [
         ("justification",       "Justification"),
         ("implementation_plan", "Implementation Plan"),
         ("backout_plan",        "Backout Plan"),
         ("test_plan",           "Test Plan"),
     ]:
-        text = _val(item.get(field, ""))
-        if text and text.strip():
+        text_val = _val(item.get(field, ""))
+        if text_val and text_val.strip():
             lines.append(f"## {label}")
             lines.append("")
-            lines.append(text.strip())
+            lines.append(text_val.strip())
             lines.append("")
 
-    # ── All Fields (complete, tabular) ────────────────────────
+    # -- All Fields -------------------------------------------------------
     lines.append("## All Fields")
     lines.append("")
     lines.append("| Field | Value |")
@@ -327,12 +423,11 @@ def render_markdown(table: str, item: dict, headline_fields: list) -> str:
         disp = _val(item[field_name])
         raw  = _raw(item[field_name])
         cell = f"{disp} *(raw: {raw})*" if (raw and raw != disp) else disp
-        # Escape pipe chars inside cell values
-        cell = cell.replace("|", "\\|")
+        cell = cell.replace("|", "\\|").replace("\n", " ")
         lines.append(f"| `{field_name}` | {cell} |")
     lines.append("")
 
-    # ── Raw JSON ───────────────────────────────────────────────
+    # -- Raw JSON ---------------------------------------------------------
     lines.append("## Raw JSON")
     lines.append("")
     lines.append("```json")
@@ -342,17 +437,15 @@ def render_markdown(table: str, item: dict, headline_fields: list) -> str:
 
     return "\n".join(lines)
 
+# -----------------------------------------------------------------------
+# Write records
+# -----------------------------------------------------------------------
 
-# ══════════════════════════════════════════════════════════════
-# Write records to disk
-# ══════════════════════════════════════════════════════════════
-
-def write_records(table: str, records: list, headline_fields: list) -> dict:
+def write_records(table, records, headline_fields):
     table_dir = KNOWLEDGE_DIR / table
     table_dir.mkdir(parents=True, exist_ok=True)
-
-    written, skipped = 0, 0
-    sample_fields    = set()
+    written = skipped = 0
+    sample_fields = set()
 
     for item in records:
         sample_fields.update(item.keys())
@@ -363,18 +456,18 @@ def write_records(table: str, records: list, headline_fields: list) -> dict:
             path.write_text(md, encoding="utf-8")
             written += 1
         except Exception as exc:
-            print(f"  WARNING: could not write {rid}: {exc}")
+            print(f"  [WARN] could not write {rid}: {exc}")
             skipped += 1
 
-    print(f"   ✓ wrote {written} files to knowledge/{table}/  (skipped {skipped})")
+    print(f"   [OK] {written} files written to knowledge/{table}/ "
+          f"(skipped {skipped})")
     return {"fields": sorted(sample_fields)}
 
+# -----------------------------------------------------------------------
+# Manifest
+# -----------------------------------------------------------------------
 
-# ══════════════════════════════════════════════════════════════
-# Manifest  (read by embedding_builder to validate freshness)
-# ══════════════════════════════════════════════════════════════
-
-def write_manifest(results: dict, schema: dict) -> None:
+def write_manifest(results, schema):
     META_DIR.mkdir(parents=True, exist_ok=True)
     payload = {
         "synced_at": datetime.datetime.utcnow().isoformat() + "Z",
@@ -382,14 +475,13 @@ def write_manifest(results: dict, schema: dict) -> None:
         "tables":    results,
         "schema":    schema,
     }
-    path = META_DIR / "manifest.json"
-    path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
-    print(f"\n✓ Manifest → {path}")
+    (META_DIR / "manifest.json").write_text(
+        json.dumps(payload, indent=2), encoding="utf-8")
+    print(f"\n[OK] Manifest written -> {META_DIR}/manifest.json")
 
-
-# ══════════════════════════════════════════════════════════════
+# -----------------------------------------------------------------------
 # Main
-# ══════════════════════════════════════════════════════════════
+# -----------------------------------------------------------------------
 
 def main():
     KNOWLEDGE_DIR.mkdir(exist_ok=True)
@@ -397,23 +489,24 @@ def main():
 
     for table, config in TABLES.items():
         try:
-            records          = fetch_all(table, config)
-            s                = write_records(table, records, config["headline_fields"])
-            results[table]   = {"count": len(records), "status": "ok"}
-            schema[table]    = s
+            records        = fetch_all(table, config)
+            s              = write_records(table, records,
+                                           config["headline_fields"])
+            results[table] = {"count": len(records), "status": "ok"}
+            schema[table]  = s
         except Exception as exc:
             print(f"\n[ERROR] {table}: {exc}")
-            results[table]   = {"count": 0, "status": f"FAILED: {exc}"}
+            results[table] = {"count": 0, "status": f"FAILED: {exc}"}
 
     write_manifest(results, schema)
 
-    print("\n" + "═" * 55)
+    print("\n" + "=" * 55)
     print("ServiceNow sync complete")
-    print("═" * 55)
+    print("=" * 55)
     for t, r in results.items():
-        status = "✓" if r["status"] == "ok" else "✗"
-        print(f"  {status}  {t:<22}  {r['count']:>6} records")
-    print("═" * 55)
+        ok = "[OK]" if r["status"] == "ok" else "[FAIL]"
+        print(f"  {ok}  {t:<22}  {r['count']:>6} records")
+    print("=" * 55)
 
 
 if __name__ == "__main__":
